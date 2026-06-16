@@ -761,7 +761,13 @@ function planMoRend(){
             <div style="font-size:10.5px;color:#6be06b;margin-top:2px">+$13,194 (+2.4%) DOTec · Stillwater · Karpel · Cibes</div></div>
           <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">EBITDA from +$13,194 MRR</div>
             <div style="font-size:17px;font-weight:500;color:#C9A84C">+$7,301</div>
-            <div style="font-size:10.5px;color:rgba(255,255,255,.6);margin-top:2px">55% incremental margin · +$8K project sales TBD</div></div>
+            <div style="font-size:10.5px;color:rgba(255,255,255,.6);margin-top:2px">55% incremental margin</div></div>
+        </div>
+        <div style="margin-top:10px;padding-top:10px;border-top:0.5px solid rgba(255,255,255,.15);display:flex;gap:24px;flex-wrap:wrap">
+          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:2px">+ June Project (one-time)</div>
+            <div style="font-size:15px;font-weight:500;color:#fff">$12,000</div></div>
+          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:2px">MRR + Project (June total)</div>
+            <div style="font-size:15px;font-weight:500;color:#C9A84C">$567,816</div></div>
         </div>
         <div style="margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(255,255,255,.15);font-size:10px;color:rgba(255,255,255,.45)">Total Inbound June projected: $579,894 (booked $558K + $7K new MRR + $2.75K Karpel + $3.75K Cibes + $8K project sales target) · media buys $10,561 zero-margin</div>
       </div>
@@ -996,7 +1002,7 @@ function savRender(){
         <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">${julList}</div>
       </div>
     </div>
-    <div style="margin-top:12px;padding:14px;background:rgba(201,168,76,.06);border:0.5px solid #C9A84C;border-radius:var(--rmd)">
+    <div style="margin-top:12px;padding:14px;background:rgba(220,38,38,.05);border:0.5px solid rgba(220,38,38,.35);border-radius:var(--rmd)">
       <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;flex-wrap:wrap;gap:6px">
         <span style="font-size:12px;font-weight:600;color:#8a6f20">JULY · Inbound — Headcount Scenarios</span>
         <span style="font-size:11px;color:var(--t2)">headcount is the variable: 1 or 2 roles</span>
@@ -1011,6 +1017,20 @@ function savRender(){
         </tbody>
       </table></div>
       <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">Variable swing from the optional 2nd role: <strong style="color:#8a6f20">+$4,583/mo</strong> · Range $9,432 – $14,016/mo. Base case on the tab below uses Option A (1 role).</div>
+      <div style="margin-top:10px;padding-top:10px;border-top:0.5px solid rgba(220,38,38,.25)">
+        <div style="font-size:11px;font-weight:600;color:#1E3A5F;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px">Estimated July EBITDA</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding:8px 12px;background:var(--sf2);border-radius:var(--rmd)">
+            <span style="font-size:11.5px;color:var(--t2)">Option A · 1 role</span>
+            <span style="font-size:18px;font-weight:700;color:var(--gt)">$179,196 <span style="font-size:11px;font-weight:400;color:var(--t2)">(31.7%)</span></span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding:8px 12px;background:var(--sf2);border-radius:var(--rmd)">
+            <span style="font-size:11.5px;color:var(--t2)">Option B · 2 roles</span>
+            <span style="font-size:18px;font-weight:700;color:var(--gt)">$183,780 <span style="font-size:11px;font-weight:400;color:var(--t2)">(32.5%)</span></span>
+          </div>
+        </div>
+        <div style="margin-top:8px;font-size:10px;color:var(--t3)">On $565K July plan revenue · baseline EBITDA $169,764 + recurring savings · no one-time items in July</div>
+      </div>
     </div>`;
 
   const confirmed=SAV_CONFIRMED.filter(s=>s.mo!=null);
