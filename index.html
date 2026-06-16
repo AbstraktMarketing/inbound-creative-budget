@@ -753,12 +753,9 @@ function planMoRend(){
     const mrrBox=pi===0?`
       <div style="margin-top:12px;padding:12px;background:#1E3A5F;border-radius:var(--rmd)">
         <p style="font-size:11.5px;font-weight:600;color:#C9A84C;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px">Inbound SDR — MRR Growth May → June</p>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
           <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">May Recurring MRR</div>
             <div style="font-size:17px;font-weight:500;color:#fff">$542,622</div></div>
-          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">Jun Booked MRR</div>
-            <div style="font-size:17px;font-weight:500;color:#fff">$542,316</div>
-            <div style="font-size:10.5px;color:#ff8c8c;margin-top:2px">-$306 (-0.1%) flat</div></div>
           <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">Jun Projected MRR</div>
             <div style="font-size:17px;font-weight:500;color:#C9A84C">$555,816</div>
             <div style="font-size:10.5px;color:#6be06b;margin-top:2px">+$13,194 (+2.4%) DOTec · Stillwater · Karpel · Cibes</div></div>
@@ -922,8 +919,8 @@ const SAV_CONFIRMED=[
    note:'Collateral · Downgraded plan · $85 credit applied — no charge next month'},
   {item:'Sendible — remove old accounts',cat:'Software / OpEx', dept:'Creative · Collateral', current:725,  target:588, mo:137,  status:'done',     month:'Jun',
    note:'Creative & Collateral · Removing old/HubSpot accounts immediately → $725 to $588'},
-  {item:'Wordable cancellation',         cat:'Software / OpEx', dept:'TBD',                   current:900,  target:0,   mo:900,  status:'done',     month:'Jun',
-   note:'Cancelled effective June 2026 · $900/mo eliminated'},
+  {item:'Wordable cancellation',         cat:'Software / OpEx', dept:'Inbound SDR',           current:900,  target:0,   mo:900,  status:'done',     month:'Jun',
+   note:'Inbound SDR · Cancelled effective June 2026 · $900/mo eliminated'},
   {item:'Sendible — full consolidation', cat:'Software / OpEx', dept:'Creative · Collateral', current:588,  target:400, mo:188,  status:'progress', month:'Jul',
    note:'Creative & Collateral · Shelby consolidates by users → $400/mo total (additional $188 on top of June step)'},
   {item:'Inlinks plan reduction',        cat:'Cost of Services',dept:'Inbound SDR',           current:1599, target:750, mo:849,  status:'progress', month:'Jul',
@@ -934,12 +931,12 @@ const SAV_CONFIRMED=[
    note:'1 role eliminated · $55K avg salary = $4,583/mo (base, excl. benefits/taxes)'},
 ];
 const SAV_ONETIME=[
-  {item:'Stephanie Bodine — Automotive Commission Backpay', amount:2835,
+  {item:'Stephanie Bodine — Automotive Commission Backpay', amount:2835, inbAmt:2835,
    note:'Dept: Inbound SDR · May commission included $2,835 backpay (total paid $13,198.75 vs regular $10,363.75) · Regular commission resumes in June · Inbound picks up $2,835'},
-  {item:'EM Search Consultants', amount:1050,
+  {item:'EM Search Consultants', amount:1050, inbAmt:0,
    note:'Cost of Sales Enablement · $450 + $300 + $300 in May · last month of service for prospect who signed · not expected in June'},
-  {item:"Bartolino's Legal Settlement", amount:6514,
-   note:'Dept: All 3 divisions (Inbound SDR · Creative · Collateral) · One-time legal fee incurred May 2026 · not expected in June'},
+  {item:"Bartolino's Legal Settlement", amount:6514, inbAmt:4383,
+   note:'Incurred May 2026 · not in June · Inbound SDR $4,383 · Creative & Collateral ~$1,065 each ($2,131 combined)'},
 ];
 const SAV_REVIEW=[
   {item:'VEA Technologies',      cat:'Cost of Services', current:9625,  target:null, note:'AMG PPC fulfillment retainer · renegotiate contract or review scope vs. active accounts'},
@@ -952,7 +949,7 @@ function savRender(){
   const isInbound=d=>d.dept&&d.dept.indexOf('Inbound')>-1;
   const junInbRec=SAV_CONFIRMED.filter(s=>s.month==='Jun'&&isInbound(s)).reduce((s,x)=>s+(x.mo||0),0);
   const julInbRec=SAV_CONFIRMED.filter(s=>s.month==='Jul'&&isInbound(s)).reduce((s,x)=>s+(x.mo||0),0);
-  const junInbOne=SAV_ONETIME.filter(o=>o.note&&o.note.indexOf('Inbound')>-1).reduce((s,x)=>s+x.amount,0);
+  const junInbOne=SAV_ONETIME.reduce((s,x)=>s+(x.inbAmt||0),0);
   const julInbCum=junInbRec+julInbRec; // cumulative recurring savings by July
   const julItems=SAV_CONFIRMED.filter(s=>s.month==='Jul'&&isInbound(s));
   const julList=julItems.map(x=>x.item+' (+$'+(x.mo||0).toLocaleString()+')').join(' · ');
@@ -966,15 +963,24 @@ function savRender(){
       <div style="padding:14px;background:rgba(30,58,95,.06);border:0.5px solid var(--bd);border-radius:var(--rmd)">
         <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px">
           <span style="font-size:12px;font-weight:600;color:#1E3A5F">JUNE · Inbound</span>
-          <span style="font-size:11px;color:var(--t2)">one-time</span>
+          <span style="font-size:11px;color:var(--t2)">savings + revenue growth</span>
         </div>
-        <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px">
           <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Recurring Savings</div>
-            <div style="font-size:19px;font-weight:500;${junInbRec>0?'color:var(--gt)':'color:var(--t1)'}">${junInbRec>0?'+$'+junInbRec.toLocaleString()+'/mo':'$0/mo'}</div></div>
-          <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">EBITDA Benefit</div>
-            <div style="font-size:19px;font-weight:700;color:var(--gt)">+$${junInbOne.toLocaleString()}</div></div>
+            <div style="font-size:18px;font-weight:500;color:var(--gt)">+$${junInbRec.toLocaleString()}/mo</div>
+            <div style="font-size:10px;color:var(--t2);margin-top:2px">Wordable</div></div>
+          <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">EBITDA from Revenue</div>
+            <div style="font-size:18px;font-weight:500;color:var(--gt)">+$7,301</div>
+            <div style="font-size:10px;color:var(--t2);margin-top:2px">+$13.2K MRR × 55%</div></div>
+          <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Total EBITDA Benefit</div>
+            <div style="font-size:18px;font-weight:700;color:var(--gt)">+$${(junInbRec+7301+junInbOne).toLocaleString()}</div>
+            <div style="font-size:10px;color:var(--t2);margin-top:2px">incl. $${junInbOne.toLocaleString()} one-time</div></div>
         </div>
-        <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">Stephanie Bodine backpay drop-off (one-time June P&amp;L favorable)</div>
+        <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">Wordable $900/mo savings + $7,301 revenue-driven EBITDA + $${junInbOne.toLocaleString()} one-time (Stephanie backpay $2,835 + Bartolino's legal $4,383, both gone in June)</div>
+        ${(()=>{const jr=planMoS[0].ibd;const bb=BUDS['ibd'][5];const baseE=jr-(bb.cosvc/bb.rev*jr)-bb.cos-bb.se-bb.opex;const estE=baseE+junInbOne;return `<div style="margin-top:10px;padding-top:10px;border-top:0.5px solid var(--bd);display:flex;justify-content:space-between;align-items:baseline">
+          <span style="font-size:11px;font-weight:600;color:#1E3A5F;text-transform:uppercase;letter-spacing:.04em">Estimated June EBITDA</span>
+          <span style="font-size:20px;font-weight:700;color:var(--gt)">$${Math.round(estE).toLocaleString()} <span style="font-size:12px;font-weight:400;color:var(--t2)">(${(estE/jr*100).toFixed(1)}% margin)</span></span>
+        </div>`;})()}
       </div>
       <div style="padding:14px;background:rgba(201,168,76,.08);border:1px solid #C9A84C;border-radius:var(--rmd)">
         <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px">
