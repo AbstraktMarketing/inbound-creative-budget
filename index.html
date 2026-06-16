@@ -925,10 +925,10 @@ const SAV_CONFIRMED=[
    note:'Creative & Collateral · Shelby consolidates by users → $400/mo total (additional $188 on top of June step)'},
   {item:'Inlinks plan reduction',        cat:'Cost of Services',dept:'Inbound SDR',           current:1599, target:750, mo:849,  status:'progress', month:'Jul',
    note:'Inbound SDR · Negotiating from $1,599 → $750/mo'},
-  {item:'Headcount reduction — Inbound (2)',cat:'Salaries / CoSvc', dept:'Inbound SDR',          current:9167, target:0,   mo:9167, status:'progress', month:'Jul',
-   note:'Inbound SDR · 2 roles eliminated · $55K avg salary = $4,583/mo each (base, excl. benefits/taxes)'},
-  {item:'Headcount reduction — 1 role',   cat:'Salaries / OpEx', dept:'TBD',                    current:4583, target:0,   mo:4583, status:'progress', month:'Jul',
-   note:'1 role eliminated · $55K avg salary = $4,583/mo (base, excl. benefits/taxes)'},
+  {item:'Headcount reduction — Inbound (1)',cat:'Salaries / CoSvc', dept:'Inbound SDR',          current:4583, target:0,   mo:4583, status:'progress', month:'Jul',
+   note:'Inbound SDR · 1 role eliminated (base case) · $55K avg salary = $4,583/mo · optional 2nd role = +$4,583/mo (see July scenarios)'},
+  {item:'VEA brought in-house',           cat:'Cost of Services',dept:'Inbound SDR',           current:9625, target:5625,mo:4000, status:'progress', month:'Jul',
+   note:'Inbound SDR · $4,000 of VEA PPC fulfillment brought in-house · VEA retainer reduced $9,625 → ~$5,625/mo'},
 ];
 const SAV_ONETIME=[
   {item:'Stephanie Bodine — Automotive Commission Backpay', amount:2835, inbAmt:2835,
@@ -995,6 +995,22 @@ function savRender(){
         </div>
         <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">${julList}</div>
       </div>
+    </div>
+    <div style="margin-top:12px;padding:14px;background:rgba(201,168,76,.06);border:0.5px solid #C9A84C;border-radius:var(--rmd)">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;flex-wrap:wrap;gap:6px">
+        <span style="font-size:12px;font-weight:600;color:#8a6f20">JULY · Inbound — Headcount Scenarios</span>
+        <span style="font-size:11px;color:var(--t2)">headcount is the variable: 1 or 2 roles</span>
+      </div>
+      <div style="overflow-x:auto"><table class="bt" style="width:100%;min-width:480px">
+        <thead><tr><th style="text-align:left">Line item</th><th>Option A — 1 role</th><th>Option B — 2 roles</th></tr></thead>
+        <tbody>
+          <tr><td style="text-align:left">Inlinks reduction</td><td class="fv">+$849/mo</td><td class="fv">+$849/mo</td></tr>
+          <tr><td style="text-align:left">VEA brought in-house</td><td class="fv">+$4,000/mo</td><td class="fv">+$4,000/mo</td></tr>
+          <tr><td style="text-align:left">Headcount reduction</td><td class="fv">+$4,583/mo</td><td class="fv">+$9,167/mo</td></tr>
+          <tr class="trt"><td style="text-align:left">Total Inbound recurring</td><td class="fv" style="font-weight:700">+$9,432/mo</td><td class="fv" style="font-weight:700">+$14,016/mo</td></tr>
+        </tbody>
+      </table></div>
+      <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">Variable swing from the optional 2nd role: <strong style="color:#8a6f20">+$4,583/mo</strong> · Range $9,432 – $14,016/mo. Base case on the tab below uses Option A (1 role).</div>
     </div>`;
 
   const confirmed=SAV_CONFIRMED.filter(s=>s.mo!=null);
