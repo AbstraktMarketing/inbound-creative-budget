@@ -755,12 +755,12 @@ function planMoRend(){
         <p style="font-size:11.5px;font-weight:600;color:#C9A84C;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px">Inbound SDR — MRR Growth May → June</p>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
           <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">May Recurring MRR</div>
-            <div style="font-size:17px;font-weight:500;color:#fff">$542,622</div></div>
+            <div style="font-size:17px;font-weight:500;color:#fff">$533,206</div></div>
           <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">Jun Projected MRR</div>
             <div style="font-size:17px;font-weight:500;color:#C9A84C">$555,816</div>
-            <div style="font-size:10.5px;color:#6be06b;margin-top:2px">+$13,194 (+2.4%) DOTec · Stillwater · Karpel · Cibes</div></div>
-          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">EBITDA from +$13,194 MRR</div>
-            <div style="font-size:17px;font-weight:500;color:#C9A84C">+$7,301</div>
+            <div style="font-size:10.5px;color:#6be06b;margin-top:2px">+$22,610 (+4.2%) DOTec · Stillwater · Karpel · Cibes</div></div>
+          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">EBITDA from +$22,610 MRR</div>
+            <div style="font-size:17px;font-weight:500;color:#C9A84C">+$12,510</div>
             <div style="font-size:10.5px;color:rgba(255,255,255,.6);margin-top:2px">55% incremental margin</div></div>
         </div>
         <div style="margin-top:10px;padding-top:10px;border-top:0.5px solid rgba(255,255,255,.15);display:flex;gap:24px;flex-wrap:wrap">
@@ -976,13 +976,13 @@ function savRender(){
             <div style="font-size:18px;font-weight:500;color:var(--gt)">+$${junInbRec.toLocaleString()}/mo</div>
             <div style="font-size:10px;color:var(--t2);margin-top:2px">Wordable</div></div>
           <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">EBITDA from Revenue</div>
-            <div style="font-size:18px;font-weight:500;color:var(--gt)">+$7,301</div>
-            <div style="font-size:10px;color:var(--t2);margin-top:2px">+$13.2K MRR × 55%</div></div>
+            <div style="font-size:18px;font-weight:500;color:var(--gt)">+$12,510</div>
+            <div style="font-size:10px;color:var(--t2);margin-top:2px">+$22.6K MRR × 55%</div></div>
           <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Total EBITDA Benefit</div>
-            <div style="font-size:18px;font-weight:700;color:var(--gt)">+$${(junInbRec+7301+junInbOne).toLocaleString()}</div>
+            <div style="font-size:18px;font-weight:700;color:var(--gt)">+$${(junInbRec+12510+junInbOne).toLocaleString()}</div>
             <div style="font-size:10px;color:var(--t2);margin-top:2px">incl. $${junInbOne.toLocaleString()} one-time</div></div>
         </div>
-        <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">Wordable $900/mo savings + $7,301 revenue-driven EBITDA + $${junInbOne.toLocaleString()} one-time (Stephanie backpay $2,835 + Bartolino's legal $4,383, both gone in June)</div>
+        <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">Wordable $900/mo savings + $12,510 revenue-driven EBITDA + $${junInbOne.toLocaleString()} one-time (Stephanie backpay $2,835 + Bartolino's legal $4,383, both gone in June)</div>
         ${(()=>{const jr=planMoS[0].ibd;const bb=BUDS['ibd'][5];const baseE=jr-(bb.cosvc/bb.rev*jr)-bb.cos-bb.se-bb.opex;const estE=baseE+junInbOne;return `<div style="margin-top:10px;padding-top:10px;border-top:0.5px solid var(--bd);display:flex;justify-content:space-between;align-items:baseline">
           <span style="font-size:11px;font-weight:600;color:#1E3A5F;text-transform:uppercase;letter-spacing:.04em">Estimated June EBITDA</span>
           <span style="font-size:20px;font-weight:700;color:var(--gt)">$${Math.round(estE).toLocaleString()} <span style="font-size:12px;font-weight:400;color:var(--t2)">(${(estE/jr*100).toFixed(1)}% margin)</span></span>
