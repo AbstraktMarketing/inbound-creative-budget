@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Budget Overview — Abstrakt Marketing Group</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{--bg:#f4f6f9;--sf:#ffffff;--sf2:#eef1f6;--bd:rgba(0,0,0,0.09);--bd2:rgba(0,0,0,0.16);--t1:#1c1c1c;--t2:#5c5c5c;--t3:#9a9a9a;--or:#1E3A5F;--gbg:#dcfce7;--gt:#166534;--rbg:#fee2e2;--rt:#991b1b;--rmd:8px;--rlg:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Barlow',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--t1);font-size:14px;line-height:1.5}
+.page{max-width:1120px;margin:0 auto;padding:32px 24px 56px}
+.bd{background:var(--sf);border:0.5px solid var(--bd);border-radius:var(--rlg);padding:1.25rem}
+.mc{background:var(--sf2);border-radius:var(--rmd);padding:1rem}
+.ml{font-size:11px;font-weight:500;color:var(--t2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
+.mv{font-size:20px;font-weight:500;color:var(--t1);line-height:1.2}
+.ms{font-size:11px;color:var(--t2);margin-top:3px}
+.gb{background:var(--gbg);color:var(--gt);font-size:11px;font-weight:500;padding:2px 7px;border-radius:99px;white-space:nowrap}
+.rb{background:var(--rbg);color:var(--rt);font-size:11px;font-weight:500;padding:2px 7px;border-radius:99px;white-space:nowrap}
+.nb{background:var(--sf2);color:var(--t2);font-size:11px;font-weight:500;padding:2px 7px;border-radius:99px;white-space:nowrap;border:0.5px solid var(--bd2)}
+.dv{font-size:12.5px;padding:6px 14px;border-radius:var(--rmd);cursor:pointer;border:0.5px solid var(--bd2);background:var(--sf);color:var(--t2);font-family:inherit}
+.dv:hover:not(.on){background:var(--sf2)}
+.dv.on{background:var(--or);color:#fff;border-color:var(--or);font-weight:500}
+.tb{font-size:12px;padding:4px 12px;border-radius:99px;cursor:pointer;border:0.5px solid var(--bd2);background:transparent;color:var(--t2);line-height:1.5;font-family:inherit}
+.tb:hover:not(.on){background:var(--sf2)}
+.tb.on{background:var(--or);color:#fff;border-color:transparent}
+.tab-nav{display:flex;border-bottom:0.5px solid var(--bd);margin-bottom:20px}
+.tab-nav button{font-size:13.5px;padding:10px 18px;border:none;background:transparent;color:var(--t2);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;font-family:inherit}
+.tab-nav button.on{color:var(--or);border-bottom-color:#C9A84C;font-weight:500}
+.tab-nav button:hover:not(.on){color:var(--t1);background:var(--sf2)}
+.bt{width:100%;border-collapse:collapse;font-size:12.5px}
+.bt thead th{font-size:10px;font-weight:500;color:var(--t2);text-transform:uppercase;letter-spacing:.05em;padding:6px 10px;border-bottom:0.5px solid var(--bd);text-align:right;white-space:nowrap}
+.bt thead th:first-child{text-align:left}
+.bt tbody td{padding:8px 10px;border-bottom:0.5px solid var(--bd);text-align:right;white-space:nowrap;color:var(--t1)}
+.bt tbody td:first-child{text-align:left}
+.trt td{font-weight:500;background:var(--sf2)}
+.mrg td{background:rgba(201,168,76,.06);font-size:12px}
+.mrg td:first-child{color:var(--t2);padding-left:26px}
+.fv{color:var(--gt);font-weight:500}
+.uv{color:var(--rt);font-weight:500}
+.pt{width:100%;border-collapse:collapse;font-size:11.5px}
+.pt thead th{font-size:9.5px;font-weight:500;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;padding:5px 7px;border-bottom:0.5px solid var(--bd);text-align:right;white-space:nowrap}
+.pt thead th:first-child{text-align:left;min-width:130px}
+.pt tbody td{padding:6px 7px;border-bottom:0.5px solid var(--bd);text-align:right;white-space:nowrap}
+.pt tbody td:first-child{text-align:left;color:var(--t1)}
+.pt .ptr td{font-weight:500;background:var(--sf2)}
+.pt .pmr td{font-size:11px;background:rgba(201,168,76,.05)}
+.pt .pmr td:first-child{color:var(--t2);padding-left:20px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:16px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:12px;margin-bottom:16px}
+.assume-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.assume-item{border:0.5px solid var(--bd);border-radius:var(--rmd);padding:7px 9px;font-size:11.5px;color:var(--t1);display:flex;align-items:flex-start;gap:5px}
+.dot{width:5px;height:5px;border-radius:50%;background:#C9A84C;flex-shrink:0;margin-top:4px}
+.fc-lbl{font-size:11px;font-weight:500;color:var(--t2);text-transform:uppercase;letter-spacing:.05em;margin:0 0 4px;display:block}
+.fc-sep{border:none;border-top:0.5px solid var(--bd);margin:10px 0}
+.fc-row{display:flex;justify-content:space-between;align-items:baseline;margin:4px 0;font-size:12px}
+.bfav{background:var(--gbg);color:var(--gt);font-size:11px;font-weight:500;padding:2px 7px;border-radius:99px;white-space:nowrap}
+.bunfav{background:var(--rbg);color:var(--rt);font-size:11px;font-weight:500;padding:2px 7px;border-radius:99px;white-space:nowrap}
+.bneut{background:var(--sf2);color:var(--t2);font-size:11px;font-weight:500;padding:2px 7px;border-radius:99px;white-space:nowrap;border:0.5px solid var(--bd2)}
+.stbl{width:100%;border-collapse:collapse;font-size:12px}
+.stbl th{font-size:10.5px;font-weight:500;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;padding:5px 8px;border-bottom:0.5px solid var(--bd);text-align:right;white-space:nowrap}
+.stbl th:first-child{text-align:left}
+.stbl td{padding:6px 8px;border-bottom:0.5px solid var(--bd);text-align:right;white-space:nowrap}
+.stbl td:first-child{text-align:left;color:var(--t2)}
+.stbl .br td{font-weight:500;background:rgba(30,58,95,.06)}
+.stbl .br td:first-child{color:var(--t1)}
+input[type=number]{font-size:13px;padding:6px 8px;width:100%;border:0.5px solid var(--bd2);border-radius:var(--rmd);background:var(--sf);color:var(--t1);font-family:inherit}
+input[type=number]:focus{outline:none;border-color:var(--or);box-shadow:0 0 0 2px rgba(30,58,95,.15)}
+input[type=range]{width:100%;accent-color:#C9A84C}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div style="background:rgba(30,58,95,.07);border-left:3px solid #1E3A5F;border-radius:0 var(--rlg) var(--rlg) 0;padding:1rem 1.25rem;margin-bottom:16px;display:flex;justify-content:space-between;align-items:flex-end">
+  <div>
+    <p style="font-size:18px;font-weight:500;color:var(--t1);margin-bottom:3px">2026 budget overview</p>
+    <p id="hdr-sub" style="font-size:13px;color:var(--t2)"></p>
+  </div>
+  <p id="last-updated" style="font-size:11px;color:#C9A84C;white-space:nowrap;flex-shrink:0;margin-bottom:1px"></p>
+</div>
+
+<div class="tab-nav">
+  <button class="on" onclick="showTab('dash')">Dashboard</button>
+  <button onclick="showTab('plan')">2026 Plan</button>
+  <button onclick="showTab('sav')">Savings</button>
+  <button onclick="showTab('fore')">Weekly forecast</button>
+</div>
+
+<!-- DASHBOARD TAB -->
+<div id="tab-dash">
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:16px">
+  <span style="font-size:12.5px;color:var(--t2);white-space:nowrap;margin-right:2px">Division:</span>
+  <button class="dv on" data-d="ibd" onclick="pickDiv('ibd')">Inbound SDR</button>
+  <button class="dv" data-d="clt" onclick="pickDiv('clt')">Collateral</button>
+  <button class="dv" data-d="cre" onclick="pickDiv('cre')">Creative</button>
+</div>
+<div id="cards" class="grid4"></div>
+<div class="bd" id="bva-sec" style="margin-bottom:16px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;flex-wrap:wrap;gap:8px">
+    <div style="display:flex;gap:10px;align-items:flex-start">
+      <div style="width:32px;height:32px;background:var(--or);border-radius:var(--rmd);display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:500;flex-shrink:0">$</div>
+      <div><p style="font-weight:500;font-size:14px;margin-bottom:2px">Budget vs actual</p><p id="bva-sub" style="font-size:12px;color:var(--t2)"></p></div>
+    </div>
+    <div id="tabs" style="display:flex;gap:5px;flex-wrap:wrap"></div>
+  </div>
+  <div style="overflow-x:auto">
+    <table class="bt"><thead><tr><th style="min-width:165px">Metric</th><th>Budget</th><th>Actual</th><th>Variance $</th><th>Variance %</th></tr></thead><tbody id="bva-body"></tbody></table>
+  </div>
+</div>
+<div class="grid2">
+  <div class="bd">
+    <p style="font-size:13px;font-weight:500;margin-bottom:3px">Monthly revenue</p>
+    <p style="font-size:11px;color:var(--t2);margin-bottom:10px">2026</p>
+    <div id="leg-rev" style="display:flex;gap:14px;margin-bottom:10px;font-size:11px;color:var(--t2)"></div>
+    <div style="position:relative;height:190px"><canvas id="cRev"></canvas></div>
+  </div>
+  <div class="bd">
+    <p style="font-size:13px;font-weight:500;margin-bottom:3px">Monthly EBITDA margin %</p>
+    <p style="font-size:11px;color:var(--t2);margin-bottom:10px">2026</p>
+    <div id="leg-mrg" style="display:flex;gap:14px;margin-bottom:10px;font-size:11px;color:var(--t2)"></div>
+    <div style="position:relative;height:190px"><canvas id="cMrg"></canvas></div>
+  </div>
+</div>
+<div id="narr-row" style="display:grid;gap:12px;margin-bottom:16px">
+  <div class="bd" style="border-left:3px solid var(--or);border-radius:0 var(--rlg) var(--rlg) 0">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+      <i class="ti ti-bulb" style="font-size:18px;color:#C9A84C"></i>
+      <p id="narr-title" style="font-size:13px;font-weight:500"></p>
+    </div>
+    <p id="narr" style="font-size:12.5px;color:var(--t2);line-height:1.7"></p>
+  </div>
+  <div class="bd" id="assume-card">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+      <i class="ti ti-star" style="font-size:18px;color:#C9A84C"></i>
+      <p style="font-size:13px;font-weight:500">Key budget assumptions</p>
+    </div>
+    <div class="assume-grid" id="assume-grid"></div>
+  </div>
+</div>
+<div class="bd">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+    <p id="pl-title" style="font-size:13px;font-weight:500"></p>
+    <div id="pl-legend" style="font-size:11px;color:var(--t2)"></div>
+  </div>
+  <div style="overflow-x:auto"><table class="pt"><thead id="pl-head"></thead><tbody id="pl-body"></tbody></table></div>
+</div>
+</div>
+
+<!-- FORECAST TAB -->
+<div id="tab-fore" style="display:none">
+<p style="font-size:12.5px;color:var(--t2);margin-bottom:16px">Inbound SDR · adjust revenue and cost of sales per month · all other costs auto-fill from Jan–May 2026 trailing actuals</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;align-items:start;margin-bottom:16px">
+  <div id="fc0"></div><div id="fc1"></div><div id="fc2"></div>
+</div>
+<div class="bd" style="margin-bottom:16px">
+  <p style="font-size:13px;font-weight:500;margin-bottom:14px">Shared cost model</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start">
+    <div>
+      <label class="fc-lbl" for="csSlider">Cost of services % of revenue</label>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <input type="range" id="csSlider" min="38" max="54" step="0.1" value="44.7" oninput="fcUpdCs(this.value)" style="flex:1">
+        <span id="csPct" style="font-size:13px;font-weight:500;min-width:38px;color:var(--t1)">44.7%</span>
+      </div>
+      <p style="font-size:11px;color:var(--t2);margin:0">Jan–May range: 42.7–46.0% · avg 44.7%</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div>
+        <span class="fc-lbl">Sales enablement</span>
+        <p style="font-size:13px;font-weight:500;color:var(--t1);margin:0">$4,974 <span style="font-size:11px;font-weight:400;color:var(--t2)">/mo</span></p>
+        <p style="font-size:11px;color:var(--t2);margin:2px 0 0">Trailing avg · locked</p>
+      </div>
+      <div>
+        <span class="fc-lbl">Operating expenses</span>
+        <p style="font-size:13px;font-weight:500;color:var(--t1);margin:0">$84,234 <span style="font-size:11px;font-weight:400;color:var(--t2)">/mo</span></p>
+        <p style="font-size:11px;color:var(--t2);margin:2px 0 0">Trailing avg · locked</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bd" style="margin-bottom:16px">
+  <p style="font-size:13px;font-weight:500;margin-bottom:12px">Revenue sensitivity — EBITDA margin at ±$30K scenarios</p>
+  <div style="overflow-x:auto"><table class="stbl"><thead id="fsh"></thead><tbody id="fsb"></tbody></table></div>
+</div>
+<div style="display:flex;align-items:center;justify-content:flex-end;gap:10px">
+  <p id="fc-copied" style="font-size:12px;color:var(--gt);margin:0;display:none"><i class="ti ti-check"></i> Copied to clipboard</p>
+  <button onclick="fcCopy()" style="display:flex;align-items:center;gap:5px;font-size:13px;cursor:pointer;padding:8px 14px;border:0.5px solid var(--bd2);border-radius:var(--rmd);background:var(--sf);color:var(--t1);font-family:inherit"><i class="ti ti-copy"></i> Copy forecast</button>
+</div>
+</div>
+
+<!-- 2026 PLAN TAB -->
+<div id="tab-plan" style="display:none">
+  <div id="plan-combined" class="bd" style="margin-bottom:16px"></div>
+  <div id="plan-months" style="display:grid;gap:12px;margin-bottom:16px"></div>
+  <div id="plan-divs" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-bottom:16px"></div>
+  <div class="bd" id="plan-monthly" style="margin-bottom:16px"></div>
+  <div class="bd" id="plan-scen"></div>
+</div>
+
+<!-- SAVINGS TAB -->
+<div id="tab-sav" style="display:none">
+  <div class="bd" id="sav-inbound" style="margin-bottom:16px"></div>
+  <div class="bd" id="sav-target" style="margin-bottom:16px"></div>
+  <div class="bd" id="sav-confirmed" style="margin-bottom:16px"></div>
+  <div class="bd" id="sav-onetime" style="margin-bottom:16px"></div>
+  <div class="bd" id="sav-review"></div>
+</div>
+
+<p style="font-size:11px;color:var(--t3);text-align:center;margin-top:32px">Abstrakt Marketing Group · Actuals from finalized monthly financial reports · Updated June 15, 2026</p>
+
+</div>
+<script>
+function showTab(t){
+  document.getElementById('tab-dash').style.display=t==='dash'?'':'none';
+  document.getElementById('tab-fore').style.display=t==='fore'?'':'none';
+  document.getElementById('tab-plan').style.display=t==='plan'?'':'none';
+  document.getElementById('tab-sav').style.display=t==='sav'?'':'none';
+  document.querySelectorAll('.tab-nav button').forEach((b,i)=>b.classList.toggle('on',(t==='dash'&&i===0)||(t==='plan'&&i===1)||(t==='sav'&&i===2)||(t==='fore'&&i===3)));
+  if(t==='dash'){const d=DIVS[cur];document.getElementById('hdr-sub').textContent='Annual targets and variance analysis · '+d.name+' · Jan–May 2026 actuals';}
+  else if(t==='plan'){document.getElementById('hdr-sub').textContent='2026 plan · Inbound SDR · Creative · Collateral · New Budget scenario';planRender();}
+  else if(t==='sav'){document.getElementById('hdr-sub').textContent='Cost reduction plan · target $10K/month recurring savings';savRender();}
+  else{document.getElementById('hdr-sub').textContent='Inbound SDR · weekly EBITDA margin forecast tool';}
+}
+
+const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const NA=5;
+
+const DIVS={
+  ibd:{name:'Inbound SDR'},
+  clt:{name:'Collateral'},
+  cre:{name:'Creative'},
+};
+
+const ANN={
+  ibd:{rev:6750000,gp:3699123,gpM:'54.8%',ebitda:2112598,ebitdaM:'31.3%',ni:1994125,niM:'29.5%'},
+  clt:{rev:822000,  gp:355603, gpM:'43.3%',ebitda:135105, ebitdaM:'16.4%',ni:114025, niM:'13.9%'},
+  cre:{rev:3600000, gp:1248347,gpM:'34.7%',ebitda:263033, ebitdaM:'7.3%', ni:236237, niM:'6.6%'},
+};
+
+const ASSUM={
+  ibd:['$25K new/referrals/upsells monthly','97.72% average retention','$10K revenue growth per month','$75K revenue per DSM','20% of revenue for delivery wages','50% commissions on sales'],
+  clt:['91.68% average retention','$2,500/month sales from Inbound','-$2,000 to -$5,000 target in division/month','$100 revenue/hour to determine delivery headcount'],
+  cre:['$3.6M in total 2026 revenue','Maintain headcount of 7 for delivery/account management','73% cost for project revenue','20% commissions on monthly revenue'],
+};
+
+const ACT={
+  ibd:[
+    {rev:522476,cosvc:227349,gp:295127,cos:31523,se:4948,opex:84516,ebitda:174140,ni:167932},
+    {rev:511548,cosvc:233588,gp:277960,cos:24649,se:4776,opex:86796,ebitda:161739,ni:155251},
+    {rev:537015,cosvc:245168,gp:291847,cos:39293,se:5207,opex:87434,ebitda:159913,ni:152174},
+    {rev:553637,cosvc:236533,gp:317104,cos:34919,se:4969,opex:86481,ebitda:190735,ni:183436},
+    {rev:542622,cosvc:247235,gp:295387,cos:31406,se:4971,opex:83544,ebitda:171083,ni:163811},
+  ],
+  clt:[
+    {rev:83995, cosvc:30220,gp:53775,cos:2088,se:172,opex:20197,ebitda:31318,ni:null},
+    {rev:73484, cosvc:25201,gp:48283,cos:1380,se:186,opex:14123,ebitda:32594,ni:null},
+    {rev:72504, cosvc:28909,gp:43595,cos:1662,se:175,opex:19233,ebitda:22525,ni:21067},
+    {rev:68135, cosvc:27535,gp:40600,cos:1567,se:176,opex:18976,ebitda:19881,ni:18159},
+    {rev:65580, cosvc:16893,gp:48687,cos:1500,se:186,opex:19413,ebitda:26572,ni:24886},
+  ],
+  cre:[
+    {rev:408604,cosvc:286534,gp:122070,cos:67066,se:833,opex:30678,ebitda:23493,ni:null},
+    {rev:414575,cosvc:287644,gp:126931,cos:67799,se:833,opex:34541,ebitda:23758,ni:null},
+    {rev:512453,cosvc:365936,gp:146517,cos:75044,se:833,opex:23518,ebitda:47047,ni:45448},
+    {rev:570445,cosvc:417117,gp:153328,cos:80192,se:866,opex:23762,ebitda:48615,ni:46726},
+    {rev:500956,cosvc:369499,gp:131457,cos:71674,se:833,opex:23125,ebitda:34710,ni:32860},
+  ],
+};
+
+const BUDS={
+  ibd:[
+    {rev:507500,cosvc:230000,gp:277500,cos:31250,se:7136,opex:94000,ebitda:145114,ni:135781},
+    {rev:517500,cosvc:230000,gp:287500,cos:31250,se:7136,opex:90000,ebitda:159114,ni:149781},
+    {rev:527500,cosvc:234000,gp:293500,cos:31250,se:7136,opex:88000,ebitda:167114,ni:157781},
+    {rev:537500,cosvc:248463,gp:289037,cos:31250,se:7136,opex:94388,ebitda:156263,ni:146930},
+    {rev:547500,cosvc:248643,gp:298857,cos:31250,se:7136,opex:93267,ebitda:167204,ni:157753},
+    {rev:557500,cosvc:249000,gp:308500,cos:31250,se:7136,opex:94000,ebitda:176114,ni:166781},
+    {rev:567500,cosvc:261000,gp:306500,cos:31250,se:7136,opex:97000,ebitda:171114,ni:161781},
+    {rev:577500,cosvc:261000,gp:316500,cos:31250,se:7136,opex:95000,ebitda:183114,ni:173781},
+    {rev:587500,cosvc:266000,gp:321500,cos:31250,se:7136,opex:94000,ebitda:189114,ni:179781},
+    {rev:597500,cosvc:268000,gp:329500,cos:31250,se:7136,opex:93000,ebitda:198114,ni:188781},
+    {rev:607500,cosvc:275000,gp:332500,cos:31250,se:7136,opex:95000,ebitda:199114,ni:189781},
+    {rev:617500,cosvc:280000,gp:337500,cos:31250,se:7136,opex:97000,ebitda:202114,ni:192781},
+  ],
+  clt:[
+    {rev:90000,cosvc:44910,gp:45090,cos:0,se:2000,opex:22000,ebitda:21090,ni:19000},
+    {rev:85000,cosvc:43095,gp:41905,cos:0,se:2000,opex:21000,ebitda:18905,ni:17000},
+    {rev:80000,cosvc:41360,gp:38640,cos:0,se:2000,opex:19000,ebitda:17640,ni:15000},
+    {rev:76000,cosvc:43320,gp:32680,cos:0,se:2000,opex:18000,ebitda:12680,ni:11000},
+    {rev:72000,cosvc:41854,gp:30146,cos:0,se:1816,opex:17473,ebitda:10857,ni:9028},
+    {rev:68000,cosvc:40460,gp:27540,cos:0,se:2000,opex:17000,ebitda:8540,ni:7000},
+    {rev:65000,cosvc:38155,gp:26845,cos:0,se:2000,opex:16000,ebitda:8845,ni:7000},
+    {rev:62000,cosvc:37076,gp:24924,cos:0,se:2000,opex:15000,ebitda:7924,ni:7000},
+    {rev:59000,cosvc:35990,gp:23010,cos:0,se:2000,opex:14000,ebitda:7010,ni:6000},
+    {rev:57000,cosvc:34086,gp:22914,cos:0,se:2000,opex:14000,ebitda:6914,ni:6000},
+    {rev:55000,cosvc:33385,gp:21615,cos:0,se:2000,opex:13000,ebitda:6615,ni:5000},
+    {rev:53000,cosvc:32706,gp:20294,cos:0,se:2000,opex:13000,ebitda:5294,ni:5000},
+  ],
+  cre:[
+    {rev:250000,cosvc:157000,gp:93000,cos:50000,se:0,opex:24000,ebitda:19000,ni:17000},
+    {rev:250000,cosvc:157000,gp:93000,cos:50000,se:0,opex:22000,ebitda:21000,ni:18000},
+    {rev:300000,cosvc:194000,gp:106000,cos:60000,se:0,opex:22000,ebitda:24000,ni:22000},
+    {rev:325000,cosvc:214000,gp:111000,cos:65000,se:0,opex:23000,ebitda:23000,ni:21000},
+    {rev:325000,cosvc:214492,gp:110508,cos:65000,se:0,opex:22455,ebitda:23053,ni:20854},
+    {rev:325000,cosvc:214000,gp:111000,cos:65000,se:0,opex:23000,ebitda:23000,ni:21000},
+    {rev:325000,cosvc:215000,gp:110000,cos:65000,se:0,opex:22000,ebitda:23000,ni:20000},
+    {rev:325000,cosvc:215000,gp:110000,cos:65000,se:0,opex:22000,ebitda:23000,ni:21000},
+    {rev:325000,cosvc:215000,gp:110000,cos:65000,se:0,opex:22000,ebitda:23000,ni:21000},
+    {rev:325000,cosvc:215000,gp:110000,cos:65000,se:0,opex:22000,ebitda:23000,ni:21000},
+    {rev:325000,cosvc:215000,gp:110000,cos:65000,se:0,opex:21000,ebitda:24000,ni:21000},
+    {rev:200000,cosvc:128000,gp:72000,cos:40000,se:0,opex:14000,ebitda:18000,ni:17000},
+  ],
+};
+
+const RD=[
+  {k:'rev',l:'Revenue',cost:false,bold:true},
+  {k:'cosvc',l:'Cost of services',cost:true,bold:false},
+  {k:'gp',l:'Gross profit',cost:false,bold:true},
+  {k:'cos',l:'Cost of sales',cost:true,bold:false,ind:true},
+  {k:'se',l:'Sales enablement',cost:true,bold:false,ind:true},
+  {k:'opex',l:'Operating expenses',cost:true,bold:false,ind:true},
+  {k:'ebitda',l:'EBITDA',cost:false,bold:true},
+  {k:'_m',l:'EBITDA margin %',sp:'margin'},
+  {k:'ni',l:'Net income',cost:false,bold:true},
+];
+const PL=[
+  {k:'rev',l:'Revenue',bold:true,cost:false},
+  {k:'cosvc',l:'Cost of services',bold:false,cost:true,ind:true},
+  {k:'gp',l:'Gross profit',bold:true,cost:false},
+  {k:'cos',l:'Cost of sales',bold:false,cost:true,ind:true},
+  {k:'se',l:'Sales enablement',bold:false,cost:true,ind:true},
+  {k:'opex',l:'Op. expenses',bold:false,cost:true,ind:true},
+  {k:'ebitda',l:'EBITDA',bold:true,cost:false},
+  {k:'_m',l:'EBITDA margin',bold:false,sp:'margin',ind:true},
+  {k:'ni',l:'Net income',bold:true,cost:false},
+];
+
+function em(d){return d&&d.rev?d.ebitda/d.rev*100:0;}
+function fc(v){if(v==null)return'—';return(v<0?'-':'')+'$'+Math.abs(Math.round(v)).toLocaleString();}
+function fv2(v){if(!v)return'—';return(v>0?'+':'-')+'$'+Math.abs(Math.round(v)).toLocaleString();}
+function fp(v){if(v==null)return'—';return(v>=0?'+':'')+v.toFixed(1)+'%';}
+function fmp(v){return(v>=0?'+':'')+v.toFixed(1)+' pts';}
+function fk(v){if(v==null)return'—';return(v<0?'-':'')+'$'+(Math.abs(v)/1000).toFixed(0)+'K';}
+function gsum(arr,k){return arr.reduce((s,d)=>s+(d[k]||0),0);}
+
+function gdBva(s){
+  const B=BUDS[cur],A=ACT[cur];
+  if(s==='ytd'){
+    const b={rev:0,cosvc:0,gp:0,cos:0,se:0,opex:0,ebitda:0,ni:0},a={...b};
+    for(let i=0;i<NA;i++){for(const k of Object.keys(b)){b[k]+=B[i][k];a[k]+=A[i][k];}}
+    return{b,a};
+  }
+  return{b:B[s],a:A[s]};
+}
+
+let cur='ibd',sm=3,cR=null,cM=null;
+
+function renderAll(){
+  const d=DIVS[cur],act=ACT[cur],B=BUDS[cur];
+  document.getElementById('hdr-sub').textContent='Annual targets and variance analysis · '+d.name+' · Jan–May 2026 actuals';
+  document.querySelectorAll('.dv').forEach(b=>b.classList.toggle('on',b.dataset.d===cur));
+  rCards(act,B);
+  rBvA();
+  document.getElementById('narr-row').style.gridTemplateColumns='repeat(auto-fit,minmax(380px,1fr))';
+  rNarr(act,B);
+  rCharts(act,B);
+  rPL(act,B);
+  rAssume();
+}
+
+function rCards(act,B){
+  const ya={rev:0,e:0},yb={rev:0,e:0};
+  for(let i=0;i<NA;i++){ya.rev+=act[i].rev;ya.e+=act[i].ebitda;yb.rev+=B[i].rev;yb.e+=B[i].ebitda;}
+  const am=ya.e/ya.rev*100,bm=yb.e/yb.rev*100,d=am-bm;
+  const ann=ANN[cur];
+  document.getElementById('cards').innerHTML=`
+    <div class="mc"><p class="ml">Annual revenue</p><p class="mv">${fc(ann.rev)}</p><p class="ms">2026 budget target</p></div>
+    <div class="mc"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><p class="ml" style="margin:0">Gross profit</p><span class="gb">${ann.gpM}</span></div><p class="mv">${fc(ann.gp)}</p><p class="ms">Gross margin target</p></div>
+    <div class="mc"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><p class="ml" style="margin:0">EBITDA margin</p><span class="${d>=0?'gb':'rb'}">${fmp(d)} vs budget</span></div><p class="mv">${am.toFixed(1)}%</p><p class="ms">YTD actual · target ${ann.ebitdaM}</p></div>
+    <div class="mc"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><p class="ml" style="margin:0">Net income</p><span class="gb">${ann.niM}</span></div><p class="mv">${fc(ann.ni)}</p><p class="ms">Net income margin target</p></div>`;
+}
+
+function rAssume(){
+  document.getElementById('assume-grid').innerHTML=ASSUM[cur].map(t=>`<div class="assume-item"><span class="dot"></span>${t}</div>`).join('');
+}
+
+function rBvA(){
+  const B=BUDS[cur];
+  document.getElementById('tabs').innerHTML=[...M.slice(0,NA).map((m,i)=>`<button class="tb${sm===i?' on':''}" onclick="pickMon(${i})">${m}</button>`),`<button class="tb${sm==='ytd'?' on':''}" onclick="pickMon('ytd')">YTD</button>`].join('');
+  document.getElementById('bva-sub').textContent=sm==='ytd'?'Jan – May 2026 year-to-date':M[sm]+' 2026';
+  const{b,a}=gdBva(sm);
+  document.getElementById('bva-body').innerHTML=RD.map(r=>{
+    if(r.sp==='margin'){const bm=em(b),am2=em(a),d=am2-bm;const vc=d>=0?' fv':' uv';return`<tr class="mrg"><td>${r.l}</td><td>${bm.toFixed(1)}%</td><td>${am2.toFixed(1)}%</td><td class="${vc}">${fmp(d)}</td><td class="${vc}">${fmp(d)}</td></tr>`;}
+    const d=a[r.k]-b[r.k],p=d/b[r.k]*100,vc=d===0?'':(d>0?' fv':' uv'),sp=r.ind?'<span style="display:inline-block;width:14px"></span>':'';
+    return`<tr class="${r.bold?'trt':''}"><td>${sp}${r.l}</td><td>${fc(b[r.k])}</td><td>${fc(a[r.k])}</td><td class="${vc}">${fv2(d)}</td><td class="${vc}">${d===0?'—':fp(p)}</td></tr>`;
+  }).join('');
+}
+
+function rNarr(act,B){
+  const{b,a}=gdBva(sm);
+  document.getElementById('narr-title').textContent=sm==='ytd'?'Year-to-date performance summary':M[sm]+' 2026 performance summary';
+  const rd=a.rev-b.rev,rp=(rd/b.rev*100).toFixed(1),ed=a.ebitda-b.ebitda,ep=(ed/b.ebitda*100).toFixed(1),nd=a.ni-b.ni,np=(nd/b.ni*100).toFixed(1),am=em(a),bm=em(b),md=am-bm;
+  const favs=[['cost of services',a.cosvc-b.cosvc],['sales enablement',a.se-b.se],['operating expenses',a.opex-b.opex]].filter(([,v])=>v<0).sort(([,x],[,y])=>x-y);
+  const unf=[['cost of sales',a.cos-b.cos],['cost of services',a.cosvc-b.cosvc],['operating expenses',a.opex-b.opex]].filter(([,v])=>v>0).sort(([,x],[,y])=>y-x);
+  let t='EBITDA margin '+am.toFixed(1)+'% vs '+bm.toFixed(1)+'% budgeted ('+fmp(md)+'). Revenue '+(rd>=0?'ahead':'behind')+' budget $'+Math.abs(Math.round(rd)).toLocaleString()+' ('+fp(+rp)+').';
+  if(favs.length)t+=' Largest favorable cost driver: '+favs[0][0]+' at $'+Math.abs(Math.round(favs[0][1])).toLocaleString()+' below budget.';
+  if(unf.length)t+=' '+unf[0][0].charAt(0).toUpperCase()+unf[0][0].slice(1)+' ran $'+Math.abs(Math.round(unf[0][1])).toLocaleString()+' over budget.';
+  t+=' Net income '+(nd>=0?'ahead':'behind')+' by $'+Math.abs(Math.round(nd)).toLocaleString()+' ('+fp(+np)+').';
+  document.getElementById('narr').textContent=t;
+}
+
+function rCharts(act,B){
+  if(cR){cR.destroy();cR=null;}if(cM){cM.destroy();cM=null;}
+  const leg='<span style="display:flex;align-items:center;gap:4px"><span style="width:14px;height:2.5px;background:#C9A84C;display:inline-block;border-radius:2px"></span>Actual</span><span style="display:flex;align-items:center;gap:4px"><span style="width:14px;height:0;border-top:2px dashed #888780;display:inline-block"></span>Budget</span>';
+  document.getElementById('leg-rev').innerHTML=leg;document.getElementById('leg-mrg').innerHTML=leg;
+  const nullPad=Array(12-NA).fill(null);
+  const co={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:{size:10},color:'#888',maxRotation:0}},y:{grid:{color:'rgba(0,0,0,0.05)'},border:{display:false},ticks:{font:{size:10},color:'#888'}}}};
+  const coR={...co,scales:{...co.scales,y:{...co.scales.y,ticks:{...co.scales.y.ticks,callback:v=>'$'+(v/1000).toFixed(0)+'K'}}},plugins:{...co.plugins,tooltip:{callbacks:{label:c=>c.dataset.label+': $'+Math.round(c.raw||0).toLocaleString()}}}};
+  const coM={...co,scales:{...co.scales,y:{...co.scales.y,ticks:{...co.scales.y.ticks,callback:v=>v.toFixed(0)+'%'}}},plugins:{...co.plugins,tooltip:{callbacks:{label:c=>c.dataset.label+': '+(c.raw||0).toFixed(1)+'%'}}}};
+  const dsR=[
+    {label:'Budget',data:B.map(d=>d.rev),borderColor:'#888780',borderDash:[4,4],borderWidth:1.5,pointRadius:2,tension:.3,fill:false,pointBackgroundColor:'#888780'},
+    {label:'Actual',data:[...act.map(d=>d.rev),...nullPad],borderColor:'#C9A84C',borderWidth:2,pointRadius:3,tension:.3,fill:false,spanGaps:false,pointBackgroundColor:'#C9A84C'},
+  ];
+  const dsMg=[
+    {label:'Budget margin',data:B.map(d=>+em(d).toFixed(2)),borderColor:'#888780',borderDash:[4,4],borderWidth:1.5,pointRadius:2,tension:.3,fill:false,pointBackgroundColor:'#888780'},
+    {label:'Actual margin',data:[...act.map(d=>+em(d).toFixed(2)),...nullPad],borderColor:'#C9A84C',borderWidth:2,pointRadius:3,tension:.3,fill:false,spanGaps:false,pointBackgroundColor:'#C9A84C'},
+  ];
+  cR=new Chart(document.getElementById('cRev'),{type:'line',data:{labels:M,datasets:dsR},options:coR});
+  cM=new Chart(document.getElementById('cMrg'),{type:'line',data:{labels:M,datasets:dsMg},options:coM});
+}
+
+function rPL(act,B){
+  document.getElementById('pl-title').textContent='2026 monthly P&L — '+DIVS[cur].name;
+  document.getElementById('pl-legend').innerHTML='<span style="display:inline-flex;align-items:center;gap:4px;margin-right:12px"><span style="width:8px;height:8px;border-radius:2px;background:rgba(201,168,76,.3);display:inline-block"></span>Jan–May actuals</span><span style="display:inline-flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:#eef1f6;border:0.5px solid rgba(0,0,0,0.09);display:inline-block"></span>Jun–Dec budget</span>';
+  let hh='<tr><th style="text-align:left">Metric</th>';
+  M.forEach((m,i)=>{const ia=i<NA;hh+=`<th style="${ia?'background:rgba(30,58,95,.06)':''}">${m}${ia?' ★':''}</th>`;});
+  hh+='<th>YTD</th><th>FY bud</th></tr>';
+  document.getElementById('pl-head').innerHTML=hh;
+  let bh='';
+  PL.forEach(r=>{
+    const sp=r.ind?'<span style="display:inline-block;width:11px"></span>':'',rc=r.bold?'ptr':(r.sp?'pmr':'');
+    bh+=`<tr class="${rc}"><td>${sp}${r.l}</td>`;
+    let ya=0,yaE=0,yaR=0;
+    M.forEach((_,i)=>{
+      if(r.sp==='margin'){
+        if(i<NA){yaE+=act[i].ebitda;yaR+=act[i].rev;const am=em(act[i]),bm=em(B[i]);const cls=Math.abs(am-bm)>0.05?(am>bm?' class="fv"':' class="uv"'):'';bh+=`<td style="background:rgba(201,168,76,.05)"${cls}>${am.toFixed(1)}%</td>`;}
+        else{bh+=`<td style="color:var(--t3)">${em(B[i]).toFixed(1)}%</td>`;}
+      }else{
+        if(i<NA){const av=act[i][r.k];ya+=av||0;const bv=B[i][r.k];const fav=r.cost?av<=bv:av>=bv;const cls=av!==bv?(fav?' class="fv"':' class="uv"'):'';bh+=`<td style="background:rgba(201,168,76,.05)"${cls}>${fk(av)}</td>`;}
+        else{bh+=`<td style="color:var(--t3)">${fk(B[i][r.k])}</td>`;}
+      }
+    });
+    if(r.sp==='margin'){const ytdM=yaR>0?yaE/yaR*100:0,fyBm=B.reduce((s,d)=>s+d.ebitda,0)/B.reduce((s,d)=>s+d.rev,0)*100;bh+=`<td style="font-weight:500">${ytdM.toFixed(1)}%</td><td style="color:var(--t3)">${fyBm.toFixed(1)}%</td>`;}
+    else{const fyBall=B.reduce((s,d)=>s+(d[r.k]||0),0);bh+=`<td style="font-weight:500">${fk(ya)}</td><td style="color:var(--t3)">${fk(fyBall)}</td>`;}
+    bh+='</tr>';
+  });
+  bh+=`<tr><td colspan="99" style="font-size:10.5px;color:var(--t3);padding:8px 7px;border:none">★ Jan–May show actuals colored vs budget. Jun–Dec and FY bud show budget only.</td></tr>`;
+  document.getElementById('pl-body').innerHTML=bh;
+}
+
+function pickDiv(d){cur=d;sm=3;renderAll();}
+function pickMon(m){sm=m;rBvA();rNarr(ACT[cur],BUDS[cur]);}
+renderAll();
+
+/* FORECAST (Inbound SDR only) */
+const FC_MOS=[
+  {name:'June 2026',short:'June',st:'Closing',    bRev:557500,bM:31.6},
+  {name:'July 2026',short:'July',st:'In progress',bRev:567500,bM:30.2},
+  {name:'Aug 2026', short:'Aug', st:'Planning',   bRev:577500,bM:31.7},
+];
+const FC_TR={se:4974,opex:84234};
+const fcS={csPct:44.6,m:[{rev:557500,cos:31406},{rev:567500,cos:31406},{rev:577500,cos:31406}]};
+function fcCalc(rev,cos,pct){const cosvc=rev*pct/100,gp=rev-cosvc,ebitda=gp-cos-FC_TR.se-FC_TR.opex,margin=ebitda/rev*100;return{cosvc,gp,ebitda,margin};}
+function ff(v){return'$'+Math.round(v).toLocaleString();}
+function ffk(v){return'$'+(v/1000).toFixed(0)+'K';}
+function ffm(v){return v.toFixed(1)+'%';}
+function ffd(v){return(v>=0?'+':'')+v.toFixed(1)+' pts';}
+function fcRCard(i){
+  const mo=FC_MOS[i],ms=fcS.m[i],c=fcCalc(ms.rev,ms.cos,fcS.csPct),delta=c.margin-mo.bM;
+  const bcls=delta>0.5?'bfav':delta<-0.5?'bunfav':'bneut';
+  const mcol=delta>0.5?'var(--gt)':delta<-0.5?'var(--rt)':'var(--t1)';
+  document.getElementById('fc'+i).innerHTML=`<div class="bd"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><p style="font-size:13px;font-weight:500;color:var(--t1);margin:0">${mo.name}</p><span style="font-size:11px;padding:2px 8px;border-radius:99px;border:0.5px solid var(--bd2);color:var(--t2)">${mo.st}</span></div><label class="fc-lbl" for="fr${i}">Expected revenue</label><input type="number" id="fr${i}" value="${ms.rev}" step="1000" min="0" oninput="fcUpdR(${i},this.value)" style="margin-bottom:10px"><label class="fc-lbl" for="fco${i}">Cost of sales (commissions)</label><input type="number" id="fco${i}" value="${ms.cos}" step="500" min="0" oninput="fcUpdC(${i},this.value)"><hr class="fc-sep"><div class="fc-row"><span style="color:var(--t2)">Cost of services</span><span>${ffk(c.cosvc)}</span></div><div class="fc-row"><span style="color:var(--t2)">Gross profit</span><span style="font-weight:500">${ffk(c.gp)}</span></div><div class="fc-row"><span style="color:var(--t2)">Sales enablement</span><span>${ffk(FC_TR.se)}</span></div><div class="fc-row"><span style="color:var(--t2)">Op. expenses</span><span>${ffk(FC_TR.opex)}</span></div><hr class="fc-sep" style="margin-top:6px"><div style="text-align:center;padding:10px 0 8px"><div style="font-size:34px;font-weight:500;line-height:1;color:${mcol}">${ffm(c.margin)}</div><div style="font-size:11px;color:var(--t2);margin:4px 0 10px">EBITDA margin</div><span class="${bcls}">${ffd(delta)} vs budget ${ffm(mo.bM)}</span></div><hr class="fc-sep"><div class="fc-row" style="font-size:11.5px"><span style="color:var(--t2)">EBITDA</span><span style="font-weight:500">${ff(c.ebitda)}</span></div></div>`;
+}
+function fcRSens(){
+  document.getElementById('fsh').innerHTML=`<tr><th>Revenue vs base</th>${FC_MOS.map(m=>`<th>${m.short}</th>`).join('')}</tr>`;
+  const ds=[-30000,-15000,-5000,0,5000,15000,30000];
+  document.getElementById('fsb').innerHTML=ds.map(d=>{
+    const base=d===0,label=base?'Base':(d>0?'+':'')+ff(d);
+    const cells=FC_MOS.map((mo,i)=>{
+      const rev=fcS.m[i].rev+d;if(rev<=0)return'<td>—</td>';
+      const c=fcCalc(rev,fcS.m[i].cos,fcS.csPct),delt=c.margin-mo.bM;
+      const col=delt>0.5?'color:var(--gt)':delt<-0.5?'color:var(--rt)':'';
+      return`<td style="${col}${base?'font-weight:500':''}">${ffm(c.margin)}</td>`;
+    }).join('');
+    return`<tr class="${base?'br':''}""><td>${label}</td>${cells}</tr>`;
+  }).join('');
+}
+function fcRender(){[0,1,2].forEach(fcRCard);fcRSens();}
+function fcUpdR(i,v){fcS.m[i].rev=+v||0;fcRender();}
+function fcUpdC(i,v){fcS.m[i].cos=+v||0;fcRender();}
+function fcUpdCs(v){fcS.csPct=parseFloat(v);document.getElementById('csPct').textContent=parseFloat(v).toFixed(1)+'%';fcRender();}
+function fcCopy(){
+  const today=new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
+  let t='EBITDA Forecast — Inbound SDR — Week of '+today+'\n\n';
+  FC_MOS.forEach((mo,i)=>{const c=fcCalc(fcS.m[i].rev,fcS.m[i].cos,fcS.csPct),d=c.margin-mo.bM;t+=`${mo.name}: ${ff(fcS.m[i].rev)} revenue → ${ffm(c.margin)} EBITDA margin (${ffd(d)} vs budget ${ffm(mo.bM)})\n`;});
+  t+=`\nAssumptions: CoSvc ${fcS.csPct.toFixed(1)}% of rev · CoS per month as entered · SE $${FC_TR.se.toLocaleString()} · OpEx $${FC_TR.opex.toLocaleString()}`;
+  navigator.clipboard.writeText(t).then(()=>{const el=document.getElementById('fc-copied');el.style.display='block';setTimeout(()=>el.style.display='none',2500);});
+}
+
+// ── CEO WEEKLY UPDATE ────────────────────────────────────────────────────
+const WU_DIVS_LIST=[{key:'ibd',name:'Inbound SDR'},{key:'clt',name:'Collateral'},{key:'cre',name:'Creative'}];
+let wuS={mo:5,weekOf:new Date().toISOString().split('T')[0],inp:{ibd:{rev:'',notes:''},clt:{rev:'',notes:''},cre:{rev:'',notes:''}}};
+
+function wuCalc(div,mo,pr){
+  if(!pr)return null;
+  const b=BUDS[div][mo];
+  const pE=pr-(b.cosvc/b.rev*pr)-b.cos-b.se-b.opex;
+  return{projRev:pr,projEbitda:pE,projMargin:pE/pr*100,varRev:pr-b.rev,varEbitda:pE-b.ebitda};
+}
+
+function wuRenderDivs(){
+  let h='';
+  WU_DIVS_LIST.forEach(d=>{
+    const b=BUDS[d.key][wuS.mo];
+    h+=`<div class="bd" style="margin-bottom:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <span style="font-size:13.5px;font-weight:500">${d.name}</span>
+        <span style="font-size:11px;color:var(--t2)">Budget: ${fk(b.rev)} rev · ${fk(b.ebitda)} EBITDA (${(b.ebitda/b.rev*100).toFixed(1)}%)</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px">
+        <div>
+          <label class="fc-lbl">Projected Revenue</label>
+          <input type="number" id="wu-${d.key}-rev" placeholder="${Math.round(b.rev)}"
+            style="width:100%;padding:6px 10px;border:0.5px solid var(--bd2);border-radius:var(--rmd);font-size:13px;font-family:inherit;background:var(--sf);color:var(--t1);box-sizing:border-box"
+            oninput="wuS.inp['${d.key}'].rev=this.value;wuRend()">
+          <div style="margin-top:4px;font-size:11.5px" id="wu-${d.key}-vr"><span style="color:var(--t3)">Enter revenue to project</span></div>
+        </div>
+        <div>
+          <label class="fc-lbl">Projected EBITDA</label>
+          <div style="font-size:15px;font-weight:500;padding:5px 0" id="wu-${d.key}-em">—</div>
+          <div style="font-size:11.5px" id="wu-${d.key}-ev"></div>
+        </div>
+      </div>
+      <div>
+        <label class="fc-lbl">Notes for CEO</label>
+        <textarea id="wu-${d.key}-notes" rows="2" placeholder="Wins, risks, key context..."
+          style="width:100%;padding:6px 10px;border:0.5px solid var(--bd2);border-radius:var(--rmd);font-size:12.5px;font-family:inherit;background:var(--sf);color:var(--t1);resize:vertical;box-sizing:border-box"
+          oninput="wuS.inp['${d.key}'].notes=this.value;wuRend()"></textarea>
+      </div>
+    </div>`;
+  });
+  document.getElementById('wu-divs').innerHTML=h;
+}
+
+function wuRend(){
+  WU_DIVS_LIST.forEach(d=>{
+    const b=BUDS[d.key][wuS.mo];const pr=parseFloat(wuS.inp[d.key].rev)||0;
+    const vrEl=document.getElementById('wu-'+d.key+'-vr');
+    const emEl=document.getElementById('wu-'+d.key+'-em');
+    const evEl=document.getElementById('wu-'+d.key+'-ev');
+    if(!vrEl)return;
+    if(!pr){
+      vrEl.innerHTML='<span style="color:var(--t3)">Enter revenue to project</span>';
+      emEl.textContent='—';evEl.textContent='';
+    }else{
+      const c=wuCalc(d.key,wuS.mo,pr);
+      vrEl.innerHTML=`<span class="${c.varRev>=0?'fv':'uv'}">${fp(c.varRev/b.rev*100)} vs ${fk(b.rev)} budget</span>`;
+      emEl.innerHTML=`<span class="${c.varEbitda>=0?'fv':'uv'}">${fk(c.projEbitda)} (${c.projMargin.toFixed(1)}%)</span>`;
+      evEl.innerHTML=`<span class="${c.varEbitda>=0?'fv':'uv'}">${fv2(c.varEbitda)}</span> vs ${fk(b.ebitda)} budget`;
+    }
+  });
+  wuRenderSummary();wuRenderMemo();
+}
+
+function wuRenderSummary(){
+  const mo=wuS.mo;let tBR=0,tBE=0,tPR=0,tPE=0,allIn=true,rows='';
+  WU_DIVS_LIST.forEach(d=>{
+    const b=BUDS[d.key][mo];const pr=parseFloat(wuS.inp[d.key].rev)||0;const c=pr?wuCalc(d.key,mo,pr):null;
+    tBR+=b.rev;tBE+=b.ebitda;
+    if(c){tPR+=c.projRev;tPE+=c.projEbitda;}else{allIn=false;}
+    const rC=c?`${fk(c.projRev)} <span class="${c.varRev>=0?'fv':'uv'}" style="font-size:11px">(${fp(c.varRev/b.rev*100)})</span>`:'<span style="color:var(--t3)">—</span>';
+    const eC=c?`${fk(c.projEbitda)} <span class="${c.varEbitda>=0?'fv':'uv'}" style="font-size:11px">(${c.projMargin.toFixed(1)}%)</span>`:'<span style="color:var(--t3)">—</span>';
+    rows+=`<tr><td style="text-align:left">${d.name}</td><td>${fk(b.rev)}</td><td>${rC}</td><td>${fk(b.ebitda)} (${(b.ebitda/b.rev*100).toFixed(1)}%)</td><td>${eC}</td></tr>`;
+  });
+  const tRh=allIn?`${fk(tPR)} <span class="${tPR>=tBR?'fv':'uv'}" style="font-size:11px">(${fp((tPR-tBR)/tBR*100)})</span>`:'<span style="color:var(--t3)">—</span>';
+  const tEh=allIn?`${fk(tPE)} <span class="${tPE>=tBE?'fv':'uv'}" style="font-size:11px">(${tPR?(tPE/tPR*100).toFixed(1)+'%':'—'})</span>`:'<span style="color:var(--t3)">—</span>';
+  rows+=`<tr class="trt"><td style="text-align:left">Combined</td><td>${fk(tBR)}</td><td>${tRh}</td><td>${fk(tBE)} (${(tBE/tBR*100).toFixed(1)}%)</td><td>${tEh}</td></tr>`;
+  document.getElementById('wu-summary').innerHTML=`<p style="font-size:13px;font-weight:500;margin-bottom:10px">${M[mo]} 2026 — Combined Forecast</p><div style="overflow-x:auto"><table class="bt" style="width:100%;min-width:480px"><thead><tr><th style="text-align:left">Division</th><th>Budget Rev</th><th>Projected Rev</th><th>Budget EBITDA</th><th>Projected EBITDA</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+function wuRenderMemo(){
+  const mo=wuS.mo;
+  const wd=wuS.weekOf?new Date(wuS.weekOf+'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}):'[date not set]';
+  let lines=[`CEO Weekly Update — Week of ${wd}`,`${M[mo]} 2026 Forecast`,``];
+  let hasData=false;
+  WU_DIVS_LIST.forEach(d=>{
+    const b=BUDS[d.key][mo];const pr=parseFloat(wuS.inp[d.key].rev)||0;const notes=wuS.inp[d.key].notes.trim();
+    if(pr){
+      hasData=true;
+      const c=wuCalc(d.key,mo,pr);const vp=((pr-b.rev)/b.rev*100).toFixed(1);
+      lines.push(`${d.name}: ${fk(pr)} revenue (${pr>=b.rev?'+':''}${vp}% vs budget) → ${fk(c.projEbitda)} EBITDA (${c.projMargin.toFixed(1)}% margin)`);
+      if(notes)lines.push(`  Note: ${notes}`);
+    }else{lines.push(`${d.name}: [pending]`);}
+  });
+  document.getElementById('wu-memo-text').textContent=hasData?lines.join('\n'):'Enter projected revenue for each division above to generate the CEO memo.';
+}
+
+function wuCopy(){
+  navigator.clipboard.writeText(document.getElementById('wu-memo-text').textContent).then(()=>{
+    const el=document.getElementById('wu-copied');el.style.display='block';setTimeout(()=>el.style.display='none',2500);
+  });
+}
+
+// ── JUNE REVENUE PIPELINE ────────────────────────────────────────────────
+const WU_BOOKED = 558394.36; // QB total income Jun 2026 (recurring + non-recurring + media buys)
+const WU_CEO_PLAN = 553000;  // Inbound SDR New Budget plan for June
+const WU_PIPELINE_ITEMS = [
+  {client:'DOTec Engineering',       div:'Inbound SDR', amt:4000, status:'expected',  note:'New sale · not yet posted in QB'},
+  {client:'Stillwater Roofing',      div:'Inbound SDR', amt:3000, status:'expected',  note:'New sale · not yet posted in QB'},
+  {client:'Karpel Solutions',        div:'Inbound SDR', amt:2750, status:'potential', note:'Revenue transfer from Outbound · pending confirmation'},
+  {client:'Cibes (billing confirm)', div:'Inbound SDR', amt:null, status:'verify',    note:'QB shows $7,500 (AMG-76587) vs $3,750 expected · confirm Inbound SDR split'},
+];
+
+function pipelineRender(){
+  const expected=WU_PIPELINE_ITEMS.filter(x=>x.status==='expected').reduce((s,x)=>s+(x.amt||0),0);
+  const potential=WU_PIPELINE_ITEMS.filter(x=>x.status==='potential').reduce((s,x)=>s+(x.amt||0),0);
+  const projMin=WU_BOOKED+expected;
+  const projFull=WU_BOOKED+expected+potential;
+  const gapMin=WU_CEO_PLAN-projMin;
+  const gapFull=WU_CEO_PLAN-projFull;
+
+  const statusBadge=s=>{
+    if(s==='expected') return '<span class="bfav">Expected</span>';
+    if(s==='potential') return '<span class="nb" style="background:rgba(201,168,76,.12);color:#8a6f20;border-color:#C9A84C">Potential</span>';
+    return '<span class="nb">Verify</span>';
+  };
+
+  const rows=WU_PIPELINE_ITEMS.map(x=>`<tr>
+    <td style="text-align:left;font-weight:500">${x.client}</td>
+    <td style="text-align:left;font-size:12px;color:var(--t2)">${x.div}</td>
+    <td class="${x.status==='expected'?'fv':x.status==='potential'?'':''}">
+      ${x.amt!=null?'<strong>+$'+x.amt.toLocaleString()+'</strong>':'Verify'}</td>
+    <td>${statusBadge(x.status)}</td>
+    <td style="font-size:11.5px;color:var(--t2)">${x.note}</td>
+  </tr>`).join('');
+
+  document.getElementById('wu-pipeline').innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+      <p style="font-size:13px;font-weight:500">June Revenue Pipeline — Inbound SDR</p>
+      <span style="font-size:11px;color:var(--t2)">Items not yet reflected in QB · as of June 16</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px">
+      <div class="mc">
+        <div class="ml">Booked (QB)</div>
+        <div style="font-size:18px;font-weight:500">$${WU_BOOKED.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0})}</div>
+        <div style="font-size:11px;color:var(--t2);margin-top:2px">Transaction report 6/16</div>
+      </div>
+      <div class="mc">
+        <div class="ml">Projected (+ Expected)</div>
+        <div style="font-size:18px;font-weight:500;color:var(--gt)">$${projMin.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0})}</div>
+        <div style="font-size:11px;margin-top:2px;${gapMin<=0?'color:var(--gt)':'color:var(--rt)'}">${gapMin>0?'-$'+gapMin.toLocaleString()+' vs plan':'✓ At plan'}</div>
+      </div>
+      <div class="mc">
+        <div class="ml">Projected (+ Potential)</div>
+        <div style="font-size:18px;font-weight:500;color:var(--gt)">$${projFull.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0})}</div>
+        <div style="font-size:11px;margin-top:2px;${gapFull<=0?'color:var(--gt)':'color:var(--rt)'}">${gapFull>0?'-$'+Math.abs(gapFull).toLocaleString()+' vs $${WU_CEO_PLAN.toLocaleString()} plan':'+$'+Math.abs(gapFull).toLocaleString()+' above plan'}</div>
+      </div>
+    </div>
+    <div style="overflow-x:auto"><table class="bt" style="width:100%">
+      <thead><tr>
+        <th style="text-align:left">Client</th>
+        <th style="text-align:left">Division</th>
+        <th>Revenue</th>
+        <th>Status</th>
+        <th style="text-align:left">Notes</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
+}
+
+function wuInit(){
+  if(!document.getElementById('wu-ibd-rev')){document.getElementById('wu-date').value=wuS.weekOf;wuRenderDivs();}
+  pipelineRender();
+  wuRend();
+}
+
+// ── 2026 PLAN (3 divisions · CEO New Budget scenario) ──────────────────
+const JUN_IBD={booked:558394,proj:558394}; // QB total income Jun 2026 (recurring $542K + non-recurring $5.5K + media buys $10.6K)
+const JUN_COL={mrr:58525,project:12750,media:2350}; // Collateral June split: recurring MRR + project (non-recurring) + media buys
+const P26_TO_BUDS={ibd:'ibd',cre:'cre',col:'clt'};
+let planMoS={0:{ibd:579894,cre:500956,col:71275},1:{ibd:0,cre:0,col:0}}; // Jun: Inbound=QB+pending new sales+Cibes $3.75K+$8K project target · Creative=May proxy · Collateral=QB
+const planMoEOvr={'0_cre':30000}; // EBITDA overrides: Jun Creative = conservative $30K (direct mail timing)
+const P26=[
+  {key:'ibd',name:'Inbound SDR',
+    act:[{r:522475,e:175000},{r:511548,e:162465},{r:537000,e:159780},{r:553638,e:190862},{r:542622,e:175466}],
+    pl: [{r:553000,e:177000},{r:565000,e:182000},{r:577000,e:187000},{r:589000,e:192000},{r:601000,e:197000},{r:613000,e:202000},{r:625000,e:207000}]},
+  {key:'cre',name:'Creative Services',
+    act:[{r:308849,e:54070},{r:426050,e:34541},{r:545853,e:47046},{r:591245,e:48615},{r:500956,e:35825}],
+    pl: [{r:475000,e:38000},{r:450000,e:36000},{r:440000,e:36000},{r:430000,e:36000},{r:420000,e:36000},{r:410000,e:34000},{r:400000,e:32000}]},
+  {key:'col',name:'Marketing Collateral',
+    act:[{r:98434,e:34452},{r:93365,e:27623},{r:79309,e:22524},{r:78754,e:19881},{r:65580,e:27588}],
+    pl: [{r:63000,e:21000},{r:61000,e:20000},{r:58000,e:19000},{r:55000,e:17000},{r:52000,e:16000},{r:50000,e:15000},{r:48000,e:14000}]},
+];
+const P26_SCEN=[
+  {name:'New Budget', sub:'Realistic · management forecast',   rev:12990678,eb:2929738,isPlan:true},
+  {name:'Stay Flat',  sub:'May run-rate × 7 for Jun–Dec',      rev:13219784,eb:2887891,isPlan:false},
+  {name:'Flat to $15M',sub:'Identical months Jun–Dec (floor)', rev:12728678,eb:2923738,isPlan:false},
+];
+function fmil(v){const a=Math.abs(v);return(v<0?'-':'')+'$'+(a>=1e6?(a/1e6).toFixed(2)+'M':(a/1e3).toFixed(0)+'K');}
+
+function planMoCalc(divKey,pi,projRev){
+  if(!projRev)return null;
+  const b=BUDS[P26_TO_BUDS[divKey]][5+pi];
+  const pE=projRev-(b.cosvc/b.rev*projRev)-b.cos-b.se-b.opex;
+  return{projRev,projEbitda:pE,projMargin:pE/projRev*100,varRev:projRev-b.rev,varEbitda:pE-b.ebitda};
+}
+
+function planMoRend(){
+  document.getElementById('plan-months').innerHTML=[
+    {label:'June 2026',pi:0,badge:'In Progress'},
+    {label:'July 2026',pi:1,badge:'Upcoming'}
+  ].map(({label,pi,badge})=>{
+    let tPR=0,tPE=0,tExpR=0,tExpE=0,allIn=true;
+    const rows=P26.map(d=>{
+      const b=BUDS[P26_TO_BUDS[d.key]][5+pi];
+      tPR+=b.rev;tPE+=b.ebitda;
+      const pr=planMoS[pi][d.key]||0;let c=pr?planMoCalc(d.key,pi,pr):null;
+      const ovrE=planMoEOvr[pi+'_'+d.key];
+      if(c&&ovrE!=null){c.projEbitda=ovrE;c.projMargin=ovrE/pr*100;c.varEbitda=ovrE-b.ebitda;}
+      if(c){tExpR+=c.projRev;tExpE+=c.projEbitda;}else{allIn=false;}
+      const rV=c?`<span class="${c.varRev>=0?'fv':'uv'}">${fp(c.varRev/b.rev*100)}</span>`:'—';
+      const eV=c?`<span class="${c.varEbitda>=0?'fv':'uv'}">${fv2(c.varEbitda)}</span>`:'—';
+      const expR=`<input type="number" value="${pr||''}" placeholder="${Math.round(b.rev)}"
+        style="width:90px;padding:4px 7px;border:0.5px solid var(--bd2);border-radius:var(--rmd);font-size:12px;font-family:inherit;background:var(--sf);color:var(--t1)"
+        oninput="planMoS[${pi}]['${d.key}']=+this.value||0;planMoRend()">`;
+      const expE=c?`<span class="${c.varEbitda>=0?'fv':'uv'}">${fk(c.projEbitda)}</span><span style="font-size:10.5px;color:var(--t2)"> (${c.projMargin.toFixed(1)}%)</span>`:'<span style="color:var(--t3)">—</span>';
+      return`<tr>
+        <td style="text-align:left;font-weight:500">${d.name}</td>
+        <td>${fk(b.rev)}</td>
+        <td class="${0>=0?'':'uv'}">${fk(b.ebitda)} <span style="font-size:10.5px;color:var(--t2)">(${(b.ebitda/b.rev*100).toFixed(1)}%)</span></td>
+        <td>${expR}</td>
+        <td>${expE}</td>
+        <td>${rV}</td>
+        <td>${eV}</td>
+      </tr>`;
+    }).join('');
+    const tRDisp=allIn?`${fk(tExpR)} <span class="${tExpR>=tPR?'fv':'uv'}" style="font-size:11px">(${fp((tExpR-tPR)/tPR*100)})</span>`:'<span style="color:var(--t3)">—</span>';
+    const tEDisp=allIn&&tExpR?`${fk(tExpE)} <span class="${tExpE>=tPE?'fv':'uv'}" style="font-size:11px">(${(tExpE/tExpR*100).toFixed(1)}%)</span>`:'<span style="color:var(--t3)">—</span>';
+    const tVE=allIn?`<span class="${tExpE>=tPE?'fv':'uv'}">${fv2(tExpE-tPE)}</span>`:'—';
+    const tVR=allIn?`<span class="${tExpR>=tPR?'fv':'uv'}">${fp((tExpR-tPR)/tPR*100)}</span>`:'—';
+    const mrrBox=pi===0?`
+      <div style="margin-top:12px;padding:12px;background:#1E3A5F;border-radius:var(--rmd)">
+        <p style="font-size:11.5px;font-weight:600;color:#C9A84C;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px">Inbound SDR — MRR Growth May → June</p>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">May Recurring MRR</div>
+            <div style="font-size:17px;font-weight:500;color:#fff">$542,622</div></div>
+          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">Jun Booked MRR</div>
+            <div style="font-size:17px;font-weight:500;color:#fff">$542,316</div>
+            <div style="font-size:10.5px;color:#ff8c8c;margin-top:2px">-$306 (-0.1%) flat</div></div>
+          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">Jun Projected MRR</div>
+            <div style="font-size:17px;font-weight:500;color:#C9A84C">$555,816</div>
+            <div style="font-size:10.5px;color:#6be06b;margin-top:2px">+$13,194 (+2.4%) DOTec · Stillwater · Karpel · Cibes</div></div>
+          <div><div style="font-size:10px;color:rgba(255,255,255,.6);margin-bottom:3px">EBITDA from +$13,194 MRR</div>
+            <div style="font-size:17px;font-weight:500;color:#C9A84C">+$7,301</div>
+            <div style="font-size:10.5px;color:rgba(255,255,255,.6);margin-top:2px">55% incremental margin · +$8K project sales TBD</div></div>
+        </div>
+        <div style="margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(255,255,255,.15);font-size:10px;color:rgba(255,255,255,.45)">Total Inbound June projected: $579,894 (booked $558K + $7K new MRR + $2.75K Karpel + $3.75K Cibes + $8K project sales target) · media buys $10,561 zero-margin</div>
+      </div>
+      <div style="margin-top:10px;padding:12px;background:var(--sf2);border:0.5px solid var(--bd);border-radius:var(--rmd)">
+        <p style="font-size:11.5px;font-weight:600;color:var(--t1);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px">Collateral — MRR vs Project Split (June)</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+          <div><div style="font-size:10px;color:var(--t2);margin-bottom:3px">Recurring MRR</div>
+            <div style="font-size:17px;font-weight:500">$${JUN_COL.mrr.toLocaleString()}</div>
+            <div style="font-size:10.5px;color:var(--t2);margin-top:2px">ongoing monthly base</div></div>
+          <div><div style="font-size:10px;color:var(--t2);margin-bottom:3px">Project (non-recurring)</div>
+            <div style="font-size:17px;font-weight:500;color:#8a6f20">$${JUN_COL.project.toLocaleString()}</div>
+            <div style="font-size:10.5px;color:var(--t2);margin-top:2px">$11,250 one-time + $1,500</div></div>
+          <div><div style="font-size:10px;color:var(--t2);margin-bottom:3px">Total Collateral June</div>
+            <div style="font-size:17px;font-weight:500">$${(JUN_COL.mrr+JUN_COL.project+JUN_COL.media).toLocaleString()}</div>
+            <div style="font-size:10.5px;color:var(--t2);margin-top:2px">incl. $${JUN_COL.media.toLocaleString()} media buys</div></div>
+        </div>
+        <div style="margin-top:8px;font-size:10px;color:var(--t3)">Project revenue is one-time — recurring MRR base of $${JUN_COL.mrr.toLocaleString()} is the forward-looking run rate</div>
+      </div>`:'';
+    return`<div class="bd">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <span style="font-size:13px;font-weight:500">${label}</span>
+        <span class="nb">${badge}</span>
+      </div>
+      <div style="overflow-x:auto"><table class="bt" style="width:100%;min-width:600px">
+        <thead><tr>
+          <th style="text-align:left">Division</th>
+          <th>Plan Rev</th><th>Plan EBITDA</th>
+          <th>Expected Rev</th><th>Expected EBITDA</th>
+          <th>Rev Var</th><th>EBITDA Var</th>
+        </tr></thead>
+        <tbody>
+          ${rows}
+          <tr class="trt">
+            <td style="text-align:left">Combined</td>
+            <td>${fk(tPR)}</td>
+            <td>${fk(tPE)} <span style="font-size:10.5px">(${(tPE/tPR*100).toFixed(1)}%)</span></td>
+            <td>${tRDisp}</td><td>${tEDisp}</td>
+            <td>${tVR}</td><td>${tVE}</td>
+          </tr>
+        </tbody>
+      </table></div>
+      ${mrrBox}
+    </div>`;
+  }).join('');
+}
+
+function planRender(){
+  // ── Combined totals (all 3 divisions) ──
+  const cActR=P26.reduce((s,d)=>s+d.act.reduce((ss,x)=>ss+x.r,0),0);
+  const cActE=P26.reduce((s,d)=>s+d.act.reduce((ss,x)=>ss+x.e,0),0);
+  const cPlR=P26.reduce((s,d)=>s+d.pl.reduce((ss,x)=>ss+x.r,0),0);
+  const cPlE=P26.reduce((s,d)=>s+d.pl.reduce((ss,x)=>ss+x.e,0),0);
+  const cFyR=cActR+cPlR,cFyE=cActE+cPlE;
+  const ytdPct=(cActR/cFyR*100).toFixed(1);
+  const plPct=(100-parseFloat(ytdPct)).toFixed(1);
+  document.getElementById('plan-combined').innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
+      <p style="font-size:13px;font-weight:500">Combined — Inbound SDR · Creative · Collateral</p>
+      <span style="font-size:11px;color:var(--t2)">New Budget plan · Jan–May actuals + Jun–Dec forecast</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:14px">
+      <div><div class="ml">FY Revenue Plan</div><div style="font-size:22px;font-weight:500">${fmil(cFyR)}</div></div>
+      <div><div class="ml">FY EBITDA Plan</div><div style="font-size:22px;font-weight:500">${fmil(cFyE)} <span style="font-size:13px;color:var(--t2);font-weight:400">(${(cFyE/cFyR*100).toFixed(1)}%)</span></div></div>
+      <div><div class="ml">YTD Revenue (Jan–May)</div><div style="font-size:22px;font-weight:500">${fmil(cActR)}</div><div style="font-size:11px;color:var(--t2);margin-top:2px">${ytdPct}% of plan</div></div>
+      <div><div class="ml">YTD EBITDA (Jan–May)</div><div style="font-size:22px;font-weight:500">${fmil(cActE)}</div><div style="font-size:11px;color:var(--t2);margin-top:2px">${(cActE/cFyE*100).toFixed(1)}% of plan</div></div>
+    </div>
+    <div style="height:7px;background:var(--sf2);border-radius:4px;overflow:hidden;display:flex;margin-bottom:5px">
+      <div style="width:${ytdPct}%;background:#1E3A5F;flex-shrink:0"></div>
+      <div style="width:${plPct}%;background:rgba(201,168,76,.55);flex-shrink:0"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:10.5px">
+      <span style="color:#1E3A5F;font-weight:500">■ Jan–May actuals: ${fmil(cActR)} rev · ${fmil(cActE)} EBITDA</span>
+      <span style="color:#C9A84C;font-weight:500">■ Jun–Dec plan: ${fmil(cPlR)} rev · ${fmil(cPlE)} EBITDA</span>
+    </div>`;
+  let cards='';
+  P26.forEach(d=>{
+    const ytdR=d.act.reduce((s,x)=>s+x.r,0),ytdE=d.act.reduce((s,x)=>s+x.e,0);
+    const planR=d.pl.reduce((s,x)=>s+x.r,0),planE=d.pl.reduce((s,x)=>s+x.e,0);
+    const fyR=ytdR+planR,fyE=ytdE+planE;
+    const ytdPct=(ytdR/fyR*100).toFixed(1);
+    const rem=(100-parseFloat(ytdPct)).toFixed(1);
+    cards+=`<div class="bd">
+      <p style="font-size:13px;font-weight:500;margin-bottom:10px">${d.name}</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+        <div><div class="ml">FY Rev Plan</div><div style="font-size:16px;font-weight:500">${fmil(fyR)}</div></div>
+        <div><div class="ml">FY EBITDA Plan</div><div style="font-size:16px;font-weight:500">${fmil(fyE)} <span style="font-size:11.5px;color:var(--t2)">(${(fyE/fyR*100).toFixed(1)}%)</span></div></div>
+      </div>
+      <div class="ml" style="margin-bottom:4px">Jan–May actuals · Jun–Dec plan</div>
+      <div style="height:7px;background:var(--sf2);border-radius:4px;overflow:hidden;display:flex;margin-bottom:4px">
+        <div style="width:${ytdPct}%;background:#1E3A5F;flex-shrink:0"></div>
+        <div style="width:${rem}%;background:rgba(201,168,76,.55);flex-shrink:0"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:10.5px">
+        <span style="color:#1E3A5F;font-weight:500">■ Actuals: ${fmil(ytdR)} (${ytdPct}%)</span>
+        <span style="color:#C9A84C;font-weight:500">■ Plan: ${fmil(planR)}</span>
+      </div>
+    </div>`;
+  });
+  document.getElementById('plan-divs').innerHTML=cards;
+
+  // ── June & July sections ──
+  planMoRend();
+
+  // ── Combined monthly roadmap ──
+  const allMo=Array.from({length:12},(_,i)=>{
+    if(i<5){const r=P26.reduce((s,d)=>s+d.act[i].r,0),e=P26.reduce((s,d)=>s+d.act[i].e,0);return{r,e,p:false};}
+    const pi=i-5;const r=P26.reduce((s,d)=>s+d.pl[pi].r,0),e=P26.reduce((s,d)=>s+d.pl[pi].e,0);return{r,e,p:true};
+  });
+  const fyR=allMo.reduce((s,d)=>s+d.r,0),fyE=allMo.reduce((s,d)=>s+d.e,0);
+  const mh=M.map((mo,i)=>`<th${i>=5?' style="color:var(--t2)"':''}>${mo}</th>`).join('');
+  const rc=allMo.map(d=>`<td${d.p?' style="color:var(--t2)"':''}>${fk(d.r)}</td>`).join('');
+  const ec=allMo.map(d=>`<td${d.p?' style="color:var(--t2)"':''}>${fk(d.e)}</td>`).join('');
+  const mc=allMo.map(d=>`<td style="font-size:12px${d.p?';color:var(--t2)':''}">${(d.e/d.r*100).toFixed(1)}%</td>`).join('');
+  document.getElementById('plan-monthly').innerHTML=`
+    <p style="font-size:13px;font-weight:500;margin-bottom:10px">Combined Monthly Roadmap <span style="font-size:11.5px;font-weight:400;color:var(--t2)">— actuals Jan–May · New Budget plan Jun–Dec</span></p>
+    <div style="overflow-x:auto"><table class="bt" style="width:100%;min-width:700px">
+      <thead><tr><th style="text-align:left">Metric</th>${mh}<th>FY</th></tr></thead>
+      <tbody>
+        <tr class="trt"><td style="text-align:left">Revenue</td>${rc}<td>${fmil(fyR)}</td></tr>
+        <tr class="trt"><td style="text-align:left">EBITDA</td>${ec}<td>${fmil(fyE)}</td></tr>
+        <tr><td style="text-align:left;color:var(--t2);font-size:12px">EBITDA Margin</td>${mc}<td style="font-size:12px">${(fyE/fyR*100).toFixed(1)}%</td></tr>
+      </tbody>
+    </table></div>`;
+
+  // ── Scenario comparison ──
+  const base=P26_SCEN[0];
+  const sc=P26_SCEN.map(s=>{
+    const vR=s.rev-base.rev,vE=s.eb-base.eb;
+    const m=(s.eb/s.rev*100).toFixed(1);
+    return `<div class="mc" style="${s.isPlan?'border:1.5px solid #C9A84C;':''}">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+        <span style="font-size:13px;font-weight:500">${s.name}</span>
+        ${s.isPlan?'<span style="font-size:10px;padding:2px 7px;border-radius:99px;background:#C9A84C;color:#1E3A5F;font-weight:600">PLAN</span>':''}
+      </div>
+      <p style="font-size:11px;color:var(--t2);margin-bottom:10px">${s.sub}</p>
+      <div style="margin-bottom:8px">
+        <div style="font-size:17px;font-weight:500">${fmil(s.rev)} <span style="font-size:11px;color:var(--t2)">rev</span></div>
+        ${!s.isPlan?`<div style="font-size:11px;margin-top:2px"><span class="${vR>=0?'fv':'uv'}">${vR>=0?'+':'-'}${fk(Math.abs(vR))}</span> <span style="color:var(--t2)">vs plan</span></div>`:'<div style="font-size:11px;margin-top:2px;color:var(--t2)">reference</div>'}
+      </div>
+      <div>
+        <div style="font-size:17px;font-weight:500">${fmil(s.eb)} <span style="font-size:11px;color:var(--t2)">EBITDA (${m}%)</span></div>
+        ${!s.isPlan?`<div style="font-size:11px;margin-top:2px"><span class="${vE>=0?'fv':'uv'}">${vE>=0?'+':'-'}${fk(Math.abs(vE))}</span> <span style="color:var(--t2)">vs plan</span></div>`:''}
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('plan-scen').innerHTML=`
+    <p style="font-size:13px;font-weight:500;margin-bottom:12px">Scenario Comparison — 3 Divisions</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">${sc}</div>`;
+}
+
+// ── COST REDUCTION PLAN ──────────────────────────────────────────────────
+const SAV_TARGET=10000;
+const SAV_CONFIRMED=[
+  {item:'Content Snare downgrade',       cat:'Software / OpEx', dept:'Collateral',           current:249,  target:85,  mo:164,  status:'done',     month:'Jun',
+   note:'Collateral · Downgraded plan · $85 credit applied — no charge next month'},
+  {item:'Sendible — remove old accounts',cat:'Software / OpEx', dept:'Creative · Collateral', current:725,  target:588, mo:137,  status:'done',     month:'Jun',
+   note:'Creative & Collateral · Removing old/HubSpot accounts immediately → $725 to $588'},
+  {item:'Wordable cancellation',         cat:'Software / OpEx', dept:'TBD',                   current:900,  target:0,   mo:900,  status:'done',     month:'Jun',
+   note:'Cancelled effective June 2026 · $900/mo eliminated'},
+  {item:'Sendible — full consolidation', cat:'Software / OpEx', dept:'Creative · Collateral', current:588,  target:400, mo:188,  status:'progress', month:'Jul',
+   note:'Creative & Collateral · Shelby consolidates by users → $400/mo total (additional $188 on top of June step)'},
+  {item:'Inlinks plan reduction',        cat:'Cost of Services',dept:'Inbound SDR',           current:1599, target:750, mo:849,  status:'progress', month:'Jul',
+   note:'Inbound SDR · Negotiating from $1,599 → $750/mo'},
+  {item:'Headcount reduction — Inbound (2)',cat:'Salaries / CoSvc', dept:'Inbound SDR',          current:9167, target:0,   mo:9167, status:'progress', month:'Jul',
+   note:'Inbound SDR · 2 roles eliminated · $55K avg salary = $4,583/mo each (base, excl. benefits/taxes)'},
+  {item:'Headcount reduction — 1 role',   cat:'Salaries / OpEx', dept:'TBD',                    current:4583, target:0,   mo:4583, status:'progress', month:'Jul',
+   note:'1 role eliminated · $55K avg salary = $4,583/mo (base, excl. benefits/taxes)'},
+];
+const SAV_ONETIME=[
+  {item:'Stephanie Bodine — Automotive Commission Backpay', amount:2835,
+   note:'Dept: Inbound SDR · May commission included $2,835 backpay (total paid $13,198.75 vs regular $10,363.75) · Regular commission resumes in June · Inbound picks up $2,835'},
+  {item:'EM Search Consultants', amount:1050,
+   note:'Cost of Sales Enablement · $450 + $300 + $300 in May · last month of service for prospect who signed · not expected in June'},
+  {item:"Bartolino's Legal Settlement", amount:6514,
+   note:'Dept: All 3 divisions (Inbound SDR · Creative · Collateral) · One-time legal fee incurred May 2026 · not expected in June'},
+];
+const SAV_REVIEW=[
+  {item:'VEA Technologies',      cat:'Cost of Services', current:9625,  target:null, note:'AMG PPC fulfillment retainer · renegotiate contract or review scope vs. active accounts'},
+  {item:'Rhino Rank backlinks',  cat:'Cost of Services', current:16787, target:null, note:'46 orders / $16,787 in May · audit per-client link budgets for efficiency'},
+  {item:'Call Tracking Metrics', cat:'Cost of Services', current:366,   target:200,  note:'2 charges/mo · audit unused tracking numbers → potential ~$166/mo'},
+];
+
+function savRender(){
+  // ── Inbound-specific EBITDA & savings banner ──
+  const isInbound=d=>d.dept&&d.dept.indexOf('Inbound')>-1;
+  const junInbRec=SAV_CONFIRMED.filter(s=>s.month==='Jun'&&isInbound(s)).reduce((s,x)=>s+(x.mo||0),0);
+  const julInbRec=SAV_CONFIRMED.filter(s=>s.month==='Jul'&&isInbound(s)).reduce((s,x)=>s+(x.mo||0),0);
+  const junInbOne=SAV_ONETIME.filter(o=>o.note&&o.note.indexOf('Inbound')>-1).reduce((s,x)=>s+x.amount,0);
+  const julInbCum=junInbRec+julInbRec; // cumulative recurring savings by July
+  const julItems=SAV_CONFIRMED.filter(s=>s.month==='Jul'&&isInbound(s));
+  const julList=julItems.map(x=>x.item+' (+$'+(x.mo||0).toLocaleString()+')').join(' · ');
+  document.getElementById('sav-inbound').innerHTML=`
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;flex-wrap:wrap">
+      <p style="font-size:13px;font-weight:500">Inbound SDR — Projected EBITDA Benefit from Cost Savings</p>
+      <span class="nb" style="background:rgba(30,58,95,.08);color:#1E3A5F;border-color:#1E3A5F">Inbound SDR only</span>
+    </div>
+    <p style="font-size:11.5px;color:var(--t2);margin-bottom:14px">Cost savings flow 1:1 to EBITDA · only Inbound-tagged items shown (tables below total all departments)</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="padding:14px;background:rgba(30,58,95,.06);border:0.5px solid var(--bd);border-radius:var(--rmd)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px">
+          <span style="font-size:12px;font-weight:600;color:#1E3A5F">JUNE · Inbound</span>
+          <span style="font-size:11px;color:var(--t2)">one-time</span>
+        </div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap">
+          <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Recurring Savings</div>
+            <div style="font-size:19px;font-weight:500;${junInbRec>0?'color:var(--gt)':'color:var(--t1)'}">${junInbRec>0?'+$'+junInbRec.toLocaleString()+'/mo':'$0/mo'}</div></div>
+          <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">EBITDA Benefit</div>
+            <div style="font-size:19px;font-weight:700;color:var(--gt)">+$${junInbOne.toLocaleString()}</div></div>
+        </div>
+        <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">Stephanie Bodine backpay drop-off (one-time June P&amp;L favorable)</div>
+      </div>
+      <div style="padding:14px;background:rgba(201,168,76,.08);border:1px solid #C9A84C;border-radius:var(--rmd)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px">
+          <span style="font-size:12px;font-weight:600;color:#8a6f20">JULY · Inbound</span>
+          <span style="font-size:11px;color:var(--t2)">recurring / ongoing</span>
+        </div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap">
+          <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Recurring Savings</div>
+            <div style="font-size:19px;font-weight:500;color:var(--gt)">+$${julInbCum.toLocaleString()}/mo</div></div>
+          <div><div style="font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">EBITDA Benefit</div>
+            <div style="font-size:19px;font-weight:700;color:var(--gt)">+$${julInbCum.toLocaleString()}/mo</div></div>
+        </div>
+        <div style="margin-top:8px;font-size:10.5px;color:var(--t2)">${julList}</div>
+      </div>
+    </div>`;
+
+  const confirmed=SAV_CONFIRMED.filter(s=>s.mo!=null);
+  const totalConf=confirmed.reduce((s,x)=>s+x.mo,0);
+  const pct=Math.min(totalConf/SAV_TARGET*100,100).toFixed(1);
+  const gap=SAV_TARGET-totalConf;
+  document.getElementById('sav-target').innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;flex-wrap:wrap;gap:8px">
+      <div><p style="font-size:15px;font-weight:500;margin-bottom:2px">Cost Reduction Plan — $10K/Month Target</p>
+        <p style="font-size:12px;color:var(--t2)">Recurring monthly savings across Inbound SDR · Creative · Collateral</p></div>
+      <div style="text-align:right">
+        <div style="font-size:22px;font-weight:500;color:var(--gt)">$${totalConf.toLocaleString()}<span style="font-size:13px;font-weight:400;color:var(--t2)">/mo confirmed</span></div>
+        <div style="font-size:12px;color:var(--rt)">$${gap.toLocaleString()} remaining to target</div>
+      </div>
+    </div>
+    <div style="height:10px;background:var(--sf2);border-radius:5px;overflow:hidden;margin-bottom:6px">
+      <div style="height:100%;width:${pct}%;background:#1E3A5F;border-radius:5px"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--t2)">
+      <span>$${totalConf.toLocaleString()} confirmed (${pct}% of target) · +Wordable TBD</span>
+      <span>Target: $${SAV_TARGET.toLocaleString()}/mo recurring</span>
+    </div>`;
+  // Group confirmed savings by month
+  const MO_ORDER=['Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const byMo={};MO_ORDER.forEach(m=>byMo[m]=[]);
+  SAV_CONFIRMED.forEach(s=>{if(byMo[s.month])byMo[s.month].push(s);});
+  const badge=s=>s==='done'?'<span class="bfav">\u2713 Confirmed</span>':'<span style="font-size:11px;font-weight:500;padding:2px 7px;border-radius:99px;background:rgba(201,168,76,.15);color:#8a6f20">\u23F3 In Progress</span>';
+  let cumRun=0;let moHTML='';
+  MO_ORDER.forEach(mo=>{
+    const items=byMo[mo];if(!items||!items.length)return;
+    const moNew=items.reduce((s,x)=>s+(x.mo||0),0);
+    const hasTbd=items.some(x=>x.mo==null);
+    cumRun+=moNew;
+    const gap=SAV_TARGET-cumRun;
+    const rows=items.map(s=>`<tr>
+        <td style="text-align:left;font-weight:500">${s.item}</td>
+        <td style="text-align:left;font-size:12px;color:var(--t2)">${s.dept}</td>
+        <td style="color:var(--t2)">${s.current!=null?'$'+s.current.toLocaleString():'\u2014'}</td>
+        <td style="color:var(--t2)">${s.target!=null?'$'+s.target.toLocaleString():'$0'}</td>
+        <td class="fv" style="font-weight:600">${s.mo!=null?'+$'+s.mo.toLocaleString()+'/mo':'TBD'}</td>
+        <td>${badge(s.status)}</td>
+      </tr><tr><td colspan="6" style="padding:2px 10px 8px;font-size:11px;color:var(--t2);border-bottom:0.5px solid var(--bd)">${s.note}</td></tr>`).join('');
+    moHTML+=`<div style="margin-bottom:20px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#1E3A5F;border-radius:var(--rmd) var(--rmd) 0 0;flex-wrap:wrap;gap:6px">
+        <span style="font-size:13px;font-weight:600;color:#fff">${mo} 2026</span>
+        <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+          <span style="font-size:12px;color:#C9A84C;font-weight:600">+$${moNew.toLocaleString()}${hasTbd?'+':''}/mo new this month</span>
+          <span style="font-size:11.5px;color:rgba(255,255,255,.7)">Run rate: <strong style="color:#fff">$${cumRun.toLocaleString()}${hasTbd?'+':''}/mo</strong></span>
+          <span style="font-size:11.5px;${gap>0?'color:#ff8c8c':'color:#6be06b'}">Gap: ${gap>0?'-$'+gap.toLocaleString():'\u2713 Target hit'}</span>
+        </div>
+      </div>
+      <div style="overflow-x:auto;border:0.5px solid var(--bd);border-top:none;border-radius:0 0 var(--rmd) var(--rmd)">
+        <table class="bt" style="width:100%;margin:0">
+          <thead><tr><th style="text-align:left">Item</th><th style="text-align:left">Dept</th><th>Current/mo</th><th>New/mo</th><th>Saving</th><th>Status</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+  });
+  document.getElementById('sav-confirmed').innerHTML=`<p style="font-size:13px;font-weight:500;margin-bottom:12px">Confirmed Monthly Savings — by effective month</p>${moHTML}`;
+  const otRows=SAV_ONETIME.map(s=>`<tr>
+      <td style="text-align:left;font-weight:500">${s.item}</td>
+      <td class="fv" style="font-weight:600">+$${s.amount.toLocaleString()}</td>
+      <td style="text-align:left;font-size:12px;color:var(--t2)">${s.note}</td></tr>`).join('');
+  const otTotal=SAV_ONETIME.reduce((s,x)=>s+x.amount,0);
+  document.getElementById('sav-onetime').innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <p style="font-size:13px;font-weight:500">Incurred May Cost, Not in June</p>
+        <span class="nb">Favorable June impact · non-recurring</span>
+      </div>
+      <span class="fv" style="font-size:14px;font-weight:700">+$${otTotal.toLocaleString()} total</span>
+    </div>
+    <div style="overflow-x:auto"><table class="bt" style="width:100%">
+      <thead><tr><th style="text-align:left">Item</th><th>June Favorable Impact</th><th style="text-align:left">Notes</th></tr></thead>
+      <tbody>${otRows}</tbody></table></div>`;
+  const rvRows=SAV_REVIEW.map(s=>{const pot=s.target!=null?'+$'+(s.current-s.target).toLocaleString()+'/mo':'TBD';
+    return`<tr><td style="text-align:left;font-weight:500">${s.item}</td>
+      <td style="text-align:left;font-size:12px;color:var(--t2)">${s.cat}</td>
+      <td>$${s.current.toLocaleString()}</td><td>${s.target!=null?'$'+s.target.toLocaleString():'TBD'}</td>
+      <td style="color:var(--gt);font-size:12px">${pot}</td>
+      <td style="text-align:left;font-size:11.5px;color:var(--t2)">${s.note}</td></tr>`;}).join('');
+  const potTot=SAV_REVIEW.filter(s=>s.target!=null).reduce((s,x)=>s+(x.current-x.target),0);
+  document.getElementById('sav-review').innerHTML=`
+    <p style="font-size:13px;font-weight:500;margin-bottom:4px">Under Review — Additional Opportunities</p>
+    <p style="font-size:11.5px;color:var(--t2);margin-bottom:12px">Items requiring further analysis · combined known potential: +$${potTot.toLocaleString()}/mo · VEA and Rhino Rank TBD</p>
+    <div style="overflow-x:auto"><table class="bt" style="width:100%">
+      <thead><tr><th style="text-align:left">Item</th><th style="text-align:left">Category</th><th>Current/mo</th><th>Target</th><th>Potential</th><th style="text-align:left">Notes</th></tr></thead>
+      <tbody>${rvRows}</tbody></table></div>`;
+}
+
+fcRender();
+document.getElementById('last-updated').textContent='Last updated '+new Date().toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit',hour12:true});
+</script>
+</body>
+</html>
